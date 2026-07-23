@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#8d1530">
-<meta name="description" content="西安交通大学入校选拔个人整理站：官方通知、特色班型、选拔流程、往年真题与网课资源。">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="西安交通大学入校选拔指南">
-<meta property="og:description" content="把通知、班型、志愿关系、真题和学习资源整理成一张清晰地图。">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hanwentong0624-bot.github.io/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#8d1530" name="theme-color"/>
+<meta content="西安交通大学入校选拔个人整理站：官方通知、特色班型、选拔流程、往年真题、原始试卷实拍与网课资源。" name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="西安交通大学入校选拔指南" property="og:title"/>
+<meta content="把通知、班型、志愿关系、真题和学习资源整理成一张清晰地图。" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://hanwentong0624-bot.github.io/" property="og:url"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <title>西安交通大学入校选拔指南</title>
 <style>
 :root{
@@ -88,215 +88,269 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
   .policy-layout,.policy-side,.policy-stats{grid-template-columns:1fr}.policy-hero{min-height:430px;padding:27px}.policy-hero h3{font-size:28px}.policy-hero .text-link{left:27px}.policy-mini:nth-child(3){grid-column:auto}.policy-stats{grid-template-columns:1fr 1fr}.college-list{grid-template-columns:1fr}.mentor-network{grid-template-columns:1fr 1fr}.process-track{padding:25px 20px}.process-track::before{left:42px;right:auto;top:50px;bottom:50px;width:2px;height:auto;background:linear-gradient(var(--red),var(--gold),var(--blue))}.process-grid{grid-template-columns:1fr;gap:22px}.process-step{display:grid;grid-template-columns:48px 1fr;text-align:left;align-items:center;column-gap:15px}.process-dot{grid-row:1/3;margin:0;box-shadow:0 0 0 6px #fff}.process-step strong{margin:0}.process-step small{margin:0;max-width:none}.branch-cards{grid-template-columns:1fr}.file-stack{grid-template-columns:1fr}.prep-cards,.course-grid{grid-template-columns:1fr}.creator{display:block}.creator-art{min-height:280px}.creator-copy{padding:28px}.source-list{grid-template-columns:1fr}.disclaimer-card{grid-template-columns:1fr}.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}.floating-rail{right:12px;bottom:12px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.quick-card,.notice-card,.file-card{transition:none}}
+
+/* v3 refinements: official-site logo link, creator priority, and scan gallery */
+.utility-bili{color:#fff!important;background:rgba(251,114,153,.18);border:1px solid rgba(251,114,153,.45)!important;border-radius:999px;padding:3px 10px;font-weight:800}
+.brand-logo-link{position:relative;display:block;padding:4px 7px;border-radius:12px;transition:transform .2s,background .2s,box-shadow .2s}.brand-logo-link::after{content:"↗";position:absolute;right:-3px;top:-3px;width:19px;height:19px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font-size:10px;font-weight:900;box-shadow:0 5px 14px rgba(157,23,53,.2)}.brand-logo-link:hover{transform:translateY(-2px);background:#fff;box-shadow:0 10px 26px rgba(24,33,41,.09)}.brand-logo-tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translate(-50%,-4px);z-index:10;white-space:nowrap;padding:5px 9px;border-radius:999px;background:var(--navy);color:#fff;font-size:9px;font-weight:800;letter-spacing:.06em;opacity:0;pointer-events:none;transition:.18s}.brand-logo-link:hover .brand-logo-tip,.brand-logo-link:focus-visible .brand-logo-tip{opacity:1;transform:translate(-50%,0)}.brand-copy{display:block}
+.btn-bili{background:#fb7299;color:#fff;box-shadow:0 12px 30px rgba(251,114,153,.22)}.btn-bili:hover{background:#e95f89}.quick-card-bili{background:linear-gradient(135deg,#fff 0%,#fff5f8 100%);border-color:rgba(251,114,153,.34)}.quick-card-bili::after{color:#fb7299}.quick-card-bili small{color:#e85d87}.quick-card-bili .quick-no{color:rgba(251,114,153,.12)}
+.course-priority{position:relative;background:linear-gradient(180deg,#fff 0%,#fff8fa 58%,var(--paper) 100%);overflow:hidden}.course-priority::before{content:"BILIBILI";position:absolute;right:-35px;top:35px;font:900 clamp(90px,14vw,190px)/1 Arial;color:rgba(251,114,153,.035);letter-spacing:-.06em;pointer-events:none}.course-follow-link{color:#e85d87}.creator-feature{position:relative}.creator-topline{position:relative;z-index:3;display:flex;gap:8px;flex-wrap:wrap}.creator-topline span{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.24);font-size:9px;font-weight:900;letter-spacing:.12em}.creator-art-link{position:relative;z-index:3;display:inline-flex;margin-top:25px;padding:9px 13px;border:1px solid rgba(255,255,255,.45);border-radius:999px;font-size:11px;font-weight:900}.creator-copy-layout{display:grid;grid-template-columns:1fr 126px;gap:28px;align-items:center}.creator-focus{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px}.creator-focus span{padding:7px 10px;border-radius:999px;background:#fff3f7;color:#c74d72;border:1px solid rgba(251,114,153,.22);font-size:10px;font-weight:800}.creator-qr{display:block;padding:10px;border-radius:18px;background:#fff;border:1px solid rgba(24,33,41,.09);box-shadow:0 12px 30px rgba(24,33,41,.08);text-align:center;transition:.2s}.creator-qr:hover{transform:translateY(-3px)}.creator-qr img{width:106px;height:106px;margin:auto;image-rendering:auto}.creator-qr span{display:block;margin-top:7px;font-size:9px;color:var(--muted);font-weight:800}.creator-actions .btn{min-height:44px;padding-inline:17px}
+.file-card-new{border-color:rgba(199,149,45,.48);background:linear-gradient(145deg,#fff,#fffaf0)}.file-card-new .file-type{color:#9a711b}.file-card-new::before{content:"新增";position:absolute;right:16px;top:14px;padding:4px 8px;border-radius:999px;background:var(--gold);color:#fff;font-size:9px;font-weight:900;z-index:2}
+.scan-showcase{margin-top:22px;padding:30px;border-radius:28px;background:#fff;border:1px solid rgba(24,33,41,.08);box-shadow:var(--shadow-sm)}.scan-showcase-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:22px}.scan-showcase-head small{color:var(--red);font-weight:900;letter-spacing:.14em;font-size:10px}.scan-showcase-head h3{font-family:"STZhongsong","Songti SC",serif;font-size:30px;margin:7px 0 5px}.scan-showcase-head p{max-width:650px;margin:0;color:var(--muted);font-size:12px}.scan-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.scan-actions .btn{min-height:42px;padding-inline:15px;font-size:11px}.scan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.scan-card{position:relative;padding:0;border:0;border-radius:18px;overflow:hidden;background:#e9e6e0;cursor:zoom-in;box-shadow:0 8px 24px rgba(24,33,41,.08);transition:transform .22s,box-shadow .22s}.scan-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(24,33,41,.14)}.scan-card img{width:100%;height:270px;object-fit:cover;object-position:top}.scan-card span{position:absolute;left:9px;right:9px;bottom:9px;padding:10px 12px;border-radius:12px;background:rgba(15,42,61,.9);backdrop-filter:blur(8px);color:#fff;text-align:left;font-size:10px;font-weight:800}.scan-card span b{display:inline-grid;place-items:center;width:25px;height:25px;margin-right:7px;border-radius:50%;background:var(--red)}
+.float-btn.bili{background:#fb7299;color:#fff;border-color:#fb7299;font-weight:900;box-shadow:0 10px 25px rgba(251,114,153,.28)}
+@media(max-width:1000px){.creator-copy-layout{grid-template-columns:1fr 118px}.scan-grid{grid-template-columns:repeat(2,1fr)}.scan-card img{height:340px}}
+@media(max-width:700px){.brand-logo-link{padding:2px}.creator-copy-layout{grid-template-columns:1fr}.creator-qr{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:12px;text-align:left;width:100%;margin-top:12px}.creator-qr img{width:78px;height:78px}.creator-qr span{font-size:11px;margin:0}.scan-showcase{padding:20px}.scan-showcase-head{display:block}.scan-actions{display:grid;margin-top:16px}.scan-grid{grid-template-columns:1fr 1fr;gap:10px}.scan-card img{height:235px}.scan-card span{font-size:9px;padding:8px}.scan-card span b{display:none}}
+@media(max-width:430px){.scan-grid{grid-template-columns:1fr}.scan-card img{height:auto;max-height:520px}}
 </style>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
 <a class="skip-link" href="#main">跳到正文</a>
 <div class="utility-bar">
-  <div class="container utility-inner">
-    <div class="utility-left"><span class="utility-badge">个人整理 · 非官方网站</span><span>具体安排以西安交通大学当年正式通知为准</span></div>
-    <div class="utility-right"><a href="#disclaimer">免责声明</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener">GitHub</a></div>
-  </div>
+<div class="container utility-inner">
+<div class="utility-left"><span class="utility-badge">个人整理 · 非官方网站</span><span>具体安排以西安交通大学当年正式通知为准</span></div>
+<div class="utility-right"><a class="utility-bili" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">B站：萌新小童呀 ↗</a><a href="#disclaimer">免责声明</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" rel="noopener" target="_blank">GitHub</a></div>
+</div>
 </div>
 <header class="site-header" id="top">
-  <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="返回首页">
-      <img src="xjtu-logo.webp" alt="西安交通大学校标">
-      <div class="brand-copy"><strong>入校选拔指南</strong><span>Freshman Selection Guide</span></div>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="打开导航"><span></span><span></span><span></span></button>
-    <nav class="main-nav" id="mainNav" aria-label="主导航">
-      <a href="#notices">通知</a><a href="#policy">班型</a><a href="#mentoring">培养</a><a href="#flow">流程</a><a href="#materials">资料</a><a href="#courses">课程</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<div class="brand">
+<a aria-label="访问西安交通大学官网" class="brand-logo-link" href="https://www.xjtu.edu.cn/" rel="noopener" target="_blank" title="访问西安交通大学官网">
+<img alt="西安交通大学校标" src="xjtu-logo.webp"/>
+<span class="brand-logo-tip">西交官网 ↗</span>
+</a>
+<a aria-label="返回入校选拔指南首页" class="brand-copy" href="#top"><strong>入校选拔指南</strong><span>Freshman Selection Guide</span></a>
+</div>
+<button aria-controls="mainNav" aria-expanded="false" aria-label="打开导航" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="主导航" class="main-nav" id="mainNav"><a href="#courses">课程</a><a href="#notices">通知</a><a href="#policy">班型</a><a href="#flow">流程</a><a href="#materials">资料</a><a href="#mentoring">培养</a></nav>
+</div>
 </header>
 <main id="main">
 <section class="hero">
-  <div class="container hero-layout">
-    <div class="hero-copy reveal">
-      <div class="eyebrow">XJTU · Freshman Selection</div>
-      <h1>西安交通大学<br><span>入校选拔指南</span></h1>
-      <p class="hero-lead">把分散在通知、学院页面、学生资料与往年真题中的信息，整理成一条可以看懂、核对、下载和执行的路径。</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">查看最新补充通知 <b>↗</b></a>
-        <a class="btn btn-dark" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">进入官方选拔系统</a>
-        <a class="btn btn-outline" href="#flow">先理解志愿流程</a>
-      </div>
-      <div class="hero-foot"><span>最后更新：2026-07-23</span><span>面向 2026 级新生持续更新</span></div>
-    </div>
-    <div class="compass reveal" aria-label="特色班型方向示意">
-      <div class="compass-card">
-        <div class="compass-grid"></div>
-        <div class="compass-core"><div><small>SELECTION</small><strong>入校选拔</strong><em>通知 · 志愿 · 考核</em></div></div>
-        <div class="orbit-item"><i></i>钱学森学院</div>
-        <div class="orbit-item"><i></i>未来技术学院</div>
-        <div class="orbit-item"><i></i>越杰计划</div>
-        <div class="orbit-item"><i></i>医学特色班</div>
-        <div class="orbit-item"><i></i>基础学科拔尖</div>
-        <div class="orbit-item"><i></i>其他专项选拔</div>
-      </div>
-      <div class="compass-note"><span>READ FIRST</span><strong>先看当年通知，再看往年经验</strong><p>班型、名额和志愿规则可能逐年调整。</p></div>
-    </div>
-  </div>
-  <div class="container metrics reveal">
-    <div class="metric-intro"><small>REAL-TIME BOARD</small><strong>信息看板</strong></div>
-    <div class="metric"><span>今日浏览量</span><strong id="todayViews">—</strong><small>上海时区日期</small></div>
-    <div class="metric"><span>累计浏览量</span><strong id="totalViews">—</strong><small>匿名公共计数</small></div>
-    <div class="metric"><span>核心考核</span><strong>3＋1</strong><small>数学 / 物理 / 英语＋面试</small></div>
-    <div class="metric"><span>资料入口</span><strong>5</strong><small>真题、说明与合集</small></div>
-  </div>
+<div class="container hero-layout">
+<div class="hero-copy reveal">
+<div class="eyebrow">XJTU · Freshman Selection</div>
+<h1>西安交通大学<br/><span>入校选拔指南</span></h1>
+<p class="hero-lead">把分散在通知、学院页面、经验整理与往年真题中的信息，整理成一条可以看懂、核对、下载和执行的路径。</p>
+<div class="hero-actions"><a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" rel="noopener" target="_blank">查看最新补充通知 <b>↗</b></a><a class="btn btn-dark" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank">进入官方选拔系统</a><a class="btn btn-bili" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" rel="noopener" target="_blank">先看公益大物课 <b>▶</b></a></div>
+<div class="hero-foot"><span>最后更新：2026-07-23</span><span>面向 2026 级新生持续更新</span></div>
+</div>
+<div aria-label="特色班型方向示意" class="compass reveal">
+<div class="compass-card">
+<div class="compass-grid"></div>
+<div class="compass-core"><div><small>SELECTION</small><strong>入校选拔</strong><em>通知 · 志愿 · 考核</em></div></div>
+<div class="orbit-item"><i></i>钱学森学院</div>
+<div class="orbit-item"><i></i>未来技术学院</div>
+<div class="orbit-item"><i></i>越杰计划</div>
+<div class="orbit-item"><i></i>医学特色班</div>
+<div class="orbit-item"><i></i>基础学科拔尖</div>
+<div class="orbit-item"><i></i>其他专项选拔</div>
+</div>
+<div class="compass-note"><span>READ FIRST</span><strong>先看当年通知，再看往年经验</strong><p>班型、名额和志愿规则可能逐年调整。</p></div>
+</div>
+</div>
+<div class="container metrics reveal">
+<div class="metric-intro"><small>REAL-TIME BOARD</small><strong>信息看板</strong></div>
+<div class="metric"><span>今日浏览量</span><strong id="todayViews">—</strong><small>上海时区日期</small></div>
+<div class="metric"><span>累计浏览量</span><strong id="totalViews">—</strong><small>匿名公共计数</small></div>
+<div class="metric"><span>核心考核</span><strong>3＋1</strong><small>数学 / 物理 / 英语＋面试</small></div>
+<div class="metric"><span>资料入口</span><strong>8</strong><small>真题、实拍、说明与合集</small></div>
+</div>
 </section>
 <section class="quick-start">
-  <div class="container quick-grid">
-    <a class="quick-card reveal" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener"><small>STEP 01</small><strong>先读最新通知</strong><p>了解当届开放班型、时间节点和补充说明。</p><span class="quick-no">01</span></a>
-    <a class="quick-card reveal" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><small>STEP 02</small><strong>收藏官方系统</strong><p>报名、考场、面试和录取结果以此为主。</p><span class="quick-no">02</span></a>
-    <a class="quick-card reveal" href="#materials"><small>STEP 03</small><strong>用真题诊断基础</strong><p>先做一套，再决定数学、物理与英语的复习顺序。</p><span class="quick-no">03</span></a>
-  </div>
+<div class="container quick-grid">
+<a class="quick-card quick-card-bili reveal" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" rel="noopener" target="_blank"><small>START 01 · BILIBILI</small><strong>先看公益大物课</strong><p>从高中物理过渡到大学物理，关注“萌新小童呀”。</p><span class="quick-no">01</span></a>
+<a class="quick-card reveal" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" rel="noopener" target="_blank"><small>START 02</small><strong>再读最新通知</strong><p>核对当届开放班型、时间节点与补充说明。</p><span class="quick-no">02</span></a>
+<a class="quick-card reveal" href="#materials"><small>START 03</small><strong>用真题诊断基础</strong><p>新增 2016 数学试卷原始实拍，可在线预览或下载。</p><span class="quick-no">03</span></a>
+</div>
+</section><section class="section course-priority" id="courses">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-index">01 / COURSE</div>
+<div class="section-title"><h2>先修网课与公益讲座</h2><p>把学习资源放在前面：先建立大学物理与数学表达的衔接，再结合真题判断数学、物理和英语的复习重点。</p></div>
+<div class="section-action"><a class="text-link course-follow-link" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">关注萌新小童呀</a></div>
+</div>
+<article class="creator creator-feature reveal">
+<div class="creator-art">
+<div class="creator-topline"><span>本站作者</span><span>PUBLIC LECTURE</span></div>
+<div class="bili-mark">゜-゜</div>
+<h3>萌新小童呀</h3>
+<p>西交学习 · 科普 · 技术分享</p>
+<a class="creator-art-link" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">去 B 站搜索关注 ↗</a>
+</div>
+<div class="creator-copy">
+<div class="creator-copy-layout">
+<div>
+<small>START HERE · 公益先修</small>
+<h3>大学物理基础知识公益讲座</h3>
+<p>围绕力学、微积分表达和建模意识，帮助新生完成从高中物理到大学物理的过渡。可直接进入课程检索，也可扫码查找“萌新小童呀”。</p>
+<div class="creator-focus"><span>力学基础</span><span>微积分表达</span><span>物理建模</span></div>
+<div class="creator-actions">
+<a class="btn btn-primary" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" rel="noopener" target="_blank">进入公益大物课程 ↗</a>
+<a class="btn btn-light" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">搜索并关注 UP 主</a>
+</div>
+</div>
+<a aria-label="扫码搜索并关注萌新小童呀" class="creator-qr" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">
+<img alt="B站搜索萌新小童呀二维码" src="bilibili-mengxin-xiaotong-qr.webp"/>
+<span>手机扫码查找</span>
+</a>
+</div>
+</div>
+</article>
+<div class="course-grid">
+<article class="course-card reveal"><div class="course-symbol">∫</div><h3>数学竞赛 / 强基基础</h3><p>从函数、数列、不等式、组合、解析几何和证明入手，先搭方法框架再做综合题。</p><div class="course-links"><a href="https://search.bilibili.com/all?keyword=%E5%BC%BA%E5%9F%BA%E6%95%B0%E5%AD%A6%20%E7%AB%9E%E8%B5%9B%E5%9F%BA%E7%A1%80" rel="noopener" target="_blank">B 站检索 ↗</a><a href="https://www.icourse163.org/search.htm?search=%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B" rel="noopener" target="_blank">MOOC ↗</a></div></article>
+<article class="course-card reveal"><div class="course-symbol">Δ</div><h3>大学物理与高数衔接</h3><p>复习力学、电磁学和高中数学，再理解极限、导数、积分和向量在物理模型中的表达。</p><div class="course-links"><a href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" rel="noopener" target="_blank">萌新小童呀 · 大物 ↗</a><a href="https://www.icourse163.org/search.htm?search=%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6" rel="noopener" target="_blank">高数 MOOC ↗</a></div></article>
+<article class="course-card reveal"><div class="course-symbol">CET</div><h3>英语四级备考</h3><p>用官方样题定位听力、阅读、翻译和写作弱项，再按模块训练。</p><div class="course-links"><a href="https://cet.neea.edu.cn/" rel="noopener" target="_blank">CET 官网 ↗</a><a href="https://search.bilibili.com/all?keyword=%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%20%E7%B3%BB%E7%BB%9F%E8%AF%BE" rel="noopener" target="_blank">B 站系统课 ↗</a></div></article>
+</div>
+</div>
 </section>
 <section class="section" id="notices">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">01 / NOTICE</div><div class="section-title"><h2>选拔通知</h2><p>最新入口置顶，历年官方通知按照“校级说明—学院指南—后续培养”分层整理。</p></div><div class="section-action"><a class="text-link" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">官方通知系统</a></div></div>
-    <article class="notice-feature reveal">
-      <div class="notice-date"><small>UPDATED</small><strong>2026</strong></div>
-      <div><h3>2026 级入校选拔补充通知入口</h3><p>这是用户提供的最新补充入口。若其中内容与官方选拔系统、教务处或学院正式文件不一致，请以学校正式通知为准。</p></div>
-      <a class="btn" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">打开通知 ↗</a>
-    </article>
-    <div class="notice-list">
-      <a class="notice-card reveal" href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener"><time>2025 <span>校级说明会</span></time><h3>新生入校选拔工作说明会</h3><p>集中介绍钱学森学院、越杰计划、未来技术学院、人工智能等培养项目。</p><span class="arrow">↗</span></a>
-      <a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener"><time>2024 <span>钱学森学院</span></time><h3>各类试验班新生选拔指南</h3><p>查看钱学森班、拔尖班、人工智能班与志愿安排的官方历史示例。</p><span class="arrow">↗</span></a>
-      <a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" target="_blank" rel="noopener"><time>2024 <span>未来技术</span></time><h3>未来技术学院校内选拔指南</h3><p>历史方向包括储能科学与工程、智能制造工程和医工学。</p><span class="arrow">↗</span></a>
-    </div>
-    <div class="notice-source reveal"><strong>优先级建议</strong><span>新生进校选拔系统 → 教务处通知 → 相关学院官网 → 学生经验与往年资料。</span></div>
-  </div>
+<div class="container">
+<div class="section-head reveal"><div class="section-index">02 / NOTICE</div><div class="section-title"><h2>选拔通知</h2><p>最新入口置顶，历年官方通知按照“校级说明—学院指南—后续培养”分层整理。</p></div><div class="section-action"><a class="text-link" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank">官方通知系统</a></div></div>
+<article class="notice-feature reveal">
+<div class="notice-date"><small>UPDATED</small><strong>2026</strong></div>
+<div><h3>2026 级入校选拔补充通知入口</h3><p>这是当前置顶的补充通知入口。若其中内容与官方选拔系统、教务处或学院正式文件不一致，请以学校正式通知为准。</p></div>
+<a class="btn" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" rel="noopener" target="_blank">打开通知 ↗</a>
+</article>
+<div class="notice-list">
+<a class="notice-card reveal" href="https://news.xjtu.edu.cn/info/1219/224636.htm" rel="noopener" target="_blank"><time>2025 <span>校级说明会</span></time><h3>新生入校选拔工作说明会</h3><p>集中介绍钱学森学院、越杰计划、未来技术学院、人工智能等培养项目。</p><span class="arrow">↗</span></a>
+<a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" rel="noopener" target="_blank"><time>2024 <span>钱学森学院</span></time><h3>各类试验班新生选拔指南</h3><p>查看钱学森班、拔尖班、人工智能班与志愿安排的官方历史示例。</p><span class="arrow">↗</span></a>
+<a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" rel="noopener" target="_blank"><time>2024 <span>未来技术</span></time><h3>未来技术学院校内选拔指南</h3><p>历史方向包括储能科学与工程、智能制造工程和医工学。</p><span class="arrow">↗</span></a>
+</div>
+<div class="notice-source reveal"><strong>优先级建议</strong><span>新生进校选拔系统 → 教务处通知 → 相关学院官网 → 经验整理与往年资料。</span></div>
+</div>
 </section>
 <section class="section alt" id="policy">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">02 / POLICY</div><div class="section-title"><h2>政策与特色班型</h2><p>用三个视角理解班型：培养目标、专业方向、选拔规则。具体名额和考试科目仍应回到当年官方页面核对。</p></div><div class="section-action"><button class="text-link" data-modal-image="classes-summary-2026.webp" data-modal-alt="学生整理的西安交通大学特色班汇总表">查看汇总大表</button></div></div>
-    <div class="policy-tabs reveal" role="tablist" aria-label="特色班型分类">
-      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="qian">钱学森学院</button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="future">未来技术与越杰</button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="other">医学、生命与其他项目</button>
-    </div>
-    <div class="tab-panel" id="tab-qian">
-      <div class="policy-layout">
-        <article class="policy-hero reveal"><div class="policy-code">Q</div><small>HONORS EDUCATION</small><h3>工科试验班（钱学森班）</h3><p>强调工科基础、人文素养、系统思维与领军能力。2024 历史指南公开了智能制造、智慧能源动力、智能电气、智能技术与自动化四个交叉模块。</p><div class="pill-row"><span class="pill">四个交叉模块</span><span class="pill">小班研讨</span><span class="pill">科研训练</span><span class="pill">动态考核</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">阅读官方历史指南</a></article>
-        <div class="policy-side">
-          <article class="policy-mini reveal"><span class="num">5</span><h4>基础学科拔尖班</h4><p>历史公开方向包括数学、物理学、计算机科学、工程力学和基础医学。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看介绍 ↗</a></article>
-          <article class="policy-mini reveal"><span class="num">AI</span><h4>人工智能班</h4><p>课程群覆盖数学统计、计算机、AI 核心、认知与神经科学、机器人等。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看介绍 ↗</a></article>
-          <article class="policy-mini reveal"><span class="num">A/B</span><h4>志愿关系需要逐年核对</h4><p>2024 历史规则将钱学森班四个模块与“拔尖五班＋人工智能班”分成两类；同时填报时为非平行志愿。不可直接套用到 2026。</p><a href="#flow">查看志愿图解 ↘</a></article>
-        </div>
-      </div>
-      <div class="policy-stats reveal"><div class="policy-stat"><span>2024 钱院示例</span><strong>152</strong><small>各类试验班拟录取人数</small></div><div class="policy-stat"><span>钱学森班</span><strong>4</strong><small>历史公开交叉模块</small></div><div class="policy-stat"><span>拔尖方向</span><strong>5</strong><small>基础学科方向</small></div><div class="policy-stat"><span>人工智能</span><strong>1</strong><small>独立特色班型</small></div></div>
-    </div>
-    <div class="tab-panel" id="tab-future" hidden>
-      <div class="policy-layout">
-        <article class="policy-hero reveal"><div class="policy-code">F</div><small>FUTURE TECHNOLOGY</small><h3>未来技术学院</h3><p>以项目驱动、学科交叉、产教融合和贯通培养为特色。历史公开方向包括储能科学与工程、智能制造工程、医工学。</p><div class="pill-row"><span class="pill">储能</span><span class="pill">智能制造</span><span class="pill">医工学</span><span class="pill">双师型队伍</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" target="_blank" rel="noopener">阅读官方历史指南</a></article>
-        <div class="policy-side">
-          <article class="policy-mini reveal"><span class="num">越</span><h4>越杰计划</h4><p>强调多元培养、国际交流和校内外双导师。专业预选、奖学金、名额与排序方式按年度更新。</p><a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener">查看 2025 说明 ↗</a></article>
-          <article class="policy-mini reveal"><span class="num">峰</span><h4>珠峰计划</h4><p>面向大一末部分荣誉班学生开展后续拔尖选拔，不属于新生入校第一轮。</p><a href="https://news.xjtu.edu.cn/info/1219/223699.htm" target="_blank" rel="noopener">查看后续选拔 ↗</a></article>
-          <article class="policy-mini reveal"><span class="num">项目制</span><h4>先问自己是否适合</h4><p>重点了解课程强度、项目训练、专业归属、动态考核、退出机制和科研投入，而不只是班型名称。</p><a href="#mentoring">查看培养机制 ↘</a></article>
-        </div>
-      </div>
-    </div>
-    <div class="tab-panel" id="tab-other" hidden>
-      <div class="policy-layout">
-        <article class="policy-hero reveal"><div class="policy-code">O</div><small>MORE PROGRAMS</small><h3>医学、生命、建筑与专项班型</h3><p>学生汇总材料还列出侯宗濂班、生命科学卓越计划、建筑学、医创计划、核工程定向、金禾班、储能班等。是否在当届开放入校选拔，以官方通知为准。</p><div class="pill-row"><span class="pill">侯宗濂班</span><span class="pill">生命科学卓越</span><span class="pill">建筑学</span><span class="pill">医创计划</span><span class="pill">核工程定向</span></div><button class="text-link" data-modal-image="classes-summary-2026.webp" data-modal-alt="学生整理的西安交通大学特色班汇总表">放大查看学生汇总表</button></article>
-        <div class="policy-side">
-          <article class="policy-mini reveal"><span class="num">医</span><h4>医学类项目</h4><p>关注报考专业范围、身体条件、培养年限和临床培养安排。</p></article>
-          <article class="policy-mini reveal"><span class="num">建</span><h4>建筑专业选拔</h4><p>可能包含单独专题页与专业能力考查，必须查看当年专门通知。</p><a href="https://xsxb.xjtu.edu.cn/jzzyxb.htm" target="_blank" rel="noopener">打开专题页 ↗</a></article>
-          <article class="policy-mini reveal"><span class="num">专项</span><h4>定向与特色计划</h4><p>专项项目的培养单位、协议、专业限制和就业去向可能差异较大，报名之前应逐条阅读。</p></article>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-head reveal"><div class="section-index">03 / POLICY</div><div class="section-title"><h2>政策与特色班型</h2><p>用三个视角理解班型：培养目标、专业方向、选拔规则。具体名额和考试科目仍应回到当年官方页面核对。</p></div><div class="section-action"><button class="text-link" data-modal-alt="西安交通大学特色班型参考汇总表" data-modal-image="classes-summary-2026.webp">查看汇总大表</button></div></div>
+<div aria-label="特色班型分类" class="policy-tabs reveal" role="tablist">
+<button aria-selected="true" class="tab-btn active" data-tab="qian" role="tab">钱学森学院</button>
+<button aria-selected="false" class="tab-btn" data-tab="future" role="tab">未来技术与越杰</button>
+<button aria-selected="false" class="tab-btn" data-tab="other" role="tab">医学、生命与其他项目</button>
+</div>
+<div class="tab-panel" id="tab-qian">
+<div class="policy-layout">
+<article class="policy-hero reveal"><div class="policy-code">Q</div><small>HONORS EDUCATION</small><h3>工科试验班（钱学森班）</h3><p>强调工科基础、人文素养、系统思维与领军能力。2024 历史指南公开了智能制造、智慧能源动力、智能电气、智能技术与自动化四个交叉模块。</p><div class="pill-row"><span class="pill">四个交叉模块</span><span class="pill">小班研讨</span><span class="pill">科研训练</span><span class="pill">动态考核</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" rel="noopener" target="_blank">阅读官方历史指南</a></article>
+<div class="policy-side">
+<article class="policy-mini reveal"><span class="num">5</span><h4>基础学科拔尖班</h4><p>历史公开方向包括数学、物理学、计算机科学、工程力学和基础医学。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" rel="noopener" target="_blank">查看介绍 ↗</a></article>
+<article class="policy-mini reveal"><span class="num">AI</span><h4>人工智能班</h4><p>课程群覆盖数学统计、计算机、AI 核心、认知与神经科学、机器人等。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" rel="noopener" target="_blank">查看介绍 ↗</a></article>
+<article class="policy-mini reveal"><span class="num">A/B</span><h4>志愿关系需要逐年核对</h4><p>2024 历史规则将钱学森班四个模块与“拔尖五班＋人工智能班”分成两类；同时填报时为非平行志愿。不可直接套用到 2026。</p><a href="#flow">查看志愿图解 ↘</a></article>
+</div>
+</div>
+<div class="policy-stats reveal"><div class="policy-stat"><span>2024 钱院示例</span><strong>152</strong><small>各类试验班拟录取人数</small></div><div class="policy-stat"><span>钱学森班</span><strong>4</strong><small>历史公开交叉模块</small></div><div class="policy-stat"><span>拔尖方向</span><strong>5</strong><small>基础学科方向</small></div><div class="policy-stat"><span>人工智能</span><strong>1</strong><small>独立特色班型</small></div></div>
+</div>
+<div class="tab-panel" hidden="" id="tab-future">
+<div class="policy-layout">
+<article class="policy-hero reveal"><div class="policy-code">F</div><small>FUTURE TECHNOLOGY</small><h3>未来技术学院</h3><p>以项目驱动、学科交叉、产教融合和贯通培养为特色。历史公开方向包括储能科学与工程、智能制造工程、医工学。</p><div class="pill-row"><span class="pill">储能</span><span class="pill">智能制造</span><span class="pill">医工学</span><span class="pill">双师型队伍</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" rel="noopener" target="_blank">阅读官方历史指南</a></article>
+<div class="policy-side">
+<article class="policy-mini reveal"><span class="num">越</span><h4>越杰计划</h4><p>强调多元培养、国际交流和校内外双导师。专业预选、奖学金、名额与排序方式按年度更新。</p><a href="https://news.xjtu.edu.cn/info/1219/224636.htm" rel="noopener" target="_blank">查看 2025 说明 ↗</a></article>
+<article class="policy-mini reveal"><span class="num">峰</span><h4>珠峰计划</h4><p>面向大一末部分荣誉班学生开展后续拔尖选拔，不属于新生入校第一轮。</p><a href="https://news.xjtu.edu.cn/info/1219/223699.htm" rel="noopener" target="_blank">查看后续选拔 ↗</a></article>
+<article class="policy-mini reveal"><span class="num">项目制</span><h4>先问自己是否适合</h4><p>重点了解课程强度、项目训练、专业归属、动态考核、退出机制和科研投入，而不只是班型名称。</p><a href="#mentoring">查看培养机制 ↘</a></article>
+</div>
+</div>
+</div>
+<div class="tab-panel" hidden="" id="tab-other">
+<div class="policy-layout">
+<article class="policy-hero reveal"><div class="policy-code">O</div><small>MORE PROGRAMS</small><h3>医学、生命、建筑与专项班型</h3><p>参考汇总表还列出侯宗濂班、生命科学卓越计划、建筑学、医创计划、核工程定向、金禾班、储能班等。是否在当届开放入校选拔，以官方通知为准。</p><div class="pill-row"><span class="pill">侯宗濂班</span><span class="pill">生命科学卓越</span><span class="pill">建筑学</span><span class="pill">医创计划</span><span class="pill">核工程定向</span></div><button class="text-link" data-modal-alt="西安交通大学特色班型参考汇总表" data-modal-image="classes-summary-2026.webp">放大查看参考汇总表</button></article>
+<div class="policy-side">
+<article class="policy-mini reveal"><span class="num">医</span><h4>医学类项目</h4><p>关注报考专业范围、身体条件、培养年限和临床培养安排。</p></article>
+<article class="policy-mini reveal"><span class="num">建</span><h4>建筑专业选拔</h4><p>可能包含单独专题页与专业能力考查，必须查看当年专门通知。</p><a href="https://xsxb.xjtu.edu.cn/jzzyxb.htm" rel="noopener" target="_blank">打开专题页 ↗</a></article>
+<article class="policy-mini reveal"><span class="num">专项</span><h4>定向与特色计划</h4><p>专项项目的培养单位、协议、专业限制和就业去向可能差异较大，报名之前应逐条阅读。</p></article>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section class="section dark" id="mentoring">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">03 / MENTORING</div><div class="section-title"><h2>培养与师资机制</h2><p>特色班的“师资”不是一张教授名单，而是一套由学院、书院、项目主任、课程教师和科研导师协同组成的培养网络。</p></div><div class="section-action"><a class="text-link" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" target="_blank" rel="noopener">钱学森学院官方介绍</a></div></div>
-    <div class="dual-college reveal">
-      <article class="college-card"><small>ACADEMIC COLLEGE</small><h3>学院：学术与专业培养</h3><p>承担课程体系、专业方向、科研训练与学术评价，整合校内优质教学科研资源。</p><div class="college-list"><span>项目主任</span><span>课程教师</span><span>科研导师</span><span>专业学院</span></div></article>
-      <div class="dual-x">×</div>
-      <article class="college-card"><small>RESIDENTIAL COLLEGE</small><h3>书院：成长与社区支持</h3><p>承担班级建设、学业支持、综合素养、生活指导与朋辈交流，形成贯穿大学阶段的成长共同体。</p><div class="college-list"><span>班主任</span><span>辅导员</span><span>朋辈导师</span><span>校友资源</span></div></article>
-    </div>
-    <div class="mentor-network reveal">
-      <div class="mentor-node"><div>01</div><strong>项目主任</strong><small>培养方案与方向把关</small></div>
-      <div class="mentor-node"><div>02</div><strong>学业导师</strong><small>课程选择与学习规划</small></div>
-      <div class="mentor-node"><div>03</div><strong>科研导师</strong><small>课题、实验与科研训练</small></div>
-      <div class="mentor-node"><div>04</div><strong>班主任</strong><small>班级成长与价值引领</small></div>
-      <div class="mentor-node"><div>05</div><strong>书院辅导员</strong><small>日常事务与成长支持</small></div>
-      <div class="mentor-node"><div>06</div><strong>校友 / 产业导师</strong><small>行业视角与实践连接</small></div>
-    </div>
-    <div class="mentor-caption reveal"><strong>选择建议：</strong>除了“有没有名师”，还应了解导师接触频率、课程强度、科研机会、动态考核、退出机制和专业归属。</div>
-  </div>
+<div class="container">
+<div class="section-head reveal"><div class="section-index">04 / MENTORING</div><div class="section-title"><h2>培养与师资机制</h2><p>特色班的“师资”不是一张教授名单，而是一套由学院、书院、项目主任、课程教师和科研导师协同组成的培养网络。</p></div><div class="section-action"><a class="text-link" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" rel="noopener" target="_blank">钱学森学院官方介绍</a></div></div>
+<div class="dual-college reveal">
+<article class="college-card"><small>ACADEMIC COLLEGE</small><h3>学院：学术与专业培养</h3><p>承担课程体系、专业方向、科研训练与学术评价，整合校内优质教学科研资源。</p><div class="college-list"><span>项目主任</span><span>课程教师</span><span>科研导师</span><span>专业学院</span></div></article>
+<div class="dual-x">×</div>
+<article class="college-card"><small>RESIDENTIAL COLLEGE</small><h3>书院：成长与社区支持</h3><p>承担班级建设、学业支持、综合素养、生活指导与朋辈交流，形成贯穿大学阶段的成长共同体。</p><div class="college-list"><span>班主任</span><span>辅导员</span><span>朋辈导师</span><span>校友资源</span></div></article>
+</div>
+<div class="mentor-network reveal">
+<div class="mentor-node"><div>01</div><strong>项目主任</strong><small>培养方案与方向把关</small></div>
+<div class="mentor-node"><div>02</div><strong>学业导师</strong><small>课程选择与学习规划</small></div>
+<div class="mentor-node"><div>03</div><strong>科研导师</strong><small>课题、实验与科研训练</small></div>
+<div class="mentor-node"><div>04</div><strong>班主任</strong><small>班级成长与价值引领</small></div>
+<div class="mentor-node"><div>05</div><strong>书院辅导员</strong><small>日常事务与成长支持</small></div>
+<div class="mentor-node"><div>06</div><strong>校友 / 产业导师</strong><small>行业视角与实践连接</small></div>
+</div>
+<div class="mentor-caption reveal"><strong>选择建议：</strong>除了“有没有名师”，还应了解导师接触频率、课程强度、科研机会、动态考核、退出机制和专业归属。</div>
+</div>
 </section>
 <section class="section" id="flow">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">04 / FLOW</div><div class="section-title"><h2>选拔流程与志愿关系</h2><p>把“官方历年规则”与“学生整理流程图”分开呈现。图解用于理解，最终提交仍要以当年报名系统提示为准。</p></div><div class="section-action"><button class="text-link" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">查看原始流程图</button></div></div>
-    <div class="flow-top">
-      <article class="volunteer-diagram reveal"><div class="diagram-label">VOLUNTEER MAP</div><h3 class="diagram-title">A / B 志愿怎么理解？</h3><div class="volunteer-root">新生入校选拔志愿填报</div><div class="branch-line"></div><div class="branch-cards"><div class="branch-card"><b>A</b><strong>主要选拔志愿</strong><p>学生图按钱学森学院、越杰计划、未来技术学院等路线理解。</p></div><div class="branch-card"><b>B</b><strong>补充志愿</strong><p>能否兼报、优先级和自动放弃关系，以当年系统为准。</p></div></div><p class="diagram-note">历史规则中还可能存在同一学院内部的非平行志愿。不要用一张旧图替代当年系统规则。</p><div class="diagram-actions"><button class="btn btn-light" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">放大原图</button><a class="btn btn-outline" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">核对官方系统</a></div></article>
-      <div class="flow-evidence">
-        <article class="evidence-card reveal"><span class="badge">官方历史规则</span><h3>钱学森学院内部志愿示例</h3><p>2024 指南将钱学森班四个模块与“拔尖五班＋人工智能班”分为两类；两类各可报 1 个，同时填报时为非平行志愿。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看原文 ↗</a></article>
-        <article class="evidence-card light reveal"><span class="badge">提交前必查</span><h3>六项信息逐项确认</h3><p>报名资格、可填数量、A/B 志愿、平行/非平行、笔试科目、确认截止时间。</p><button data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">查看学生参考图 ↗</button></article>
-      </div>
-    </div>
-    <div class="process-track reveal">
-      <div class="process-grid">
-        <div class="process-step"><div class="process-dot">01</div><strong>报名</strong><small>关注开放与截止时间</small></div>
-        <div class="process-step"><div class="process-dot">02</div><strong>资格审查</strong><small>核验专业与选科条件</small></div>
-        <div class="process-step"><div class="process-dot">03</div><strong>笔试</strong><small>数学、物理、英语等</small></div>
-        <div class="process-step"><div class="process-dot">04</div><strong>面试</strong><small>志趣、表达与综合素养</small></div>
-        <div class="process-step"><div class="process-dot">05</div><strong>确认</strong><small>按时确认录取意向</small></div>
-        <div class="process-step"><div class="process-dot">06</div><strong>录取</strong><small>以官方系统结果为准</small></div>
-      </div>
-      <div class="risk-row"><span>逾期未报名</span><span>资格审查未通过</span><span>笔试未达线</span><span>综合排名未入计划</span><span>逾期未确认</span></div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-head reveal"><div class="section-index">05 / FLOW</div><div class="section-title"><h2>选拔流程与志愿关系</h2><p>把“官方历年规则”与“志愿流程参考图”分开呈现。图解用于理解，最终提交仍要以当年报名系统提示为准。</p></div><div class="section-action"><button class="text-link" data-modal-alt="新生选拔志愿填报与流程参考图" data-modal-image="selection-flowchart.webp">查看原始流程图</button></div></div>
+<div class="flow-top">
+<article class="volunteer-diagram reveal"><div class="diagram-label">VOLUNTEER MAP</div><h3 class="diagram-title">A / B 志愿怎么理解？</h3><div class="volunteer-root">新生入校选拔志愿填报</div><div class="branch-line"></div><div class="branch-cards"><div class="branch-card"><b>A</b><strong>主要选拔志愿</strong><p>参考图按钱学森学院、越杰计划、未来技术学院等路线呈现。</p></div><div class="branch-card"><b>B</b><strong>补充志愿</strong><p>能否兼报、优先级和自动放弃关系，以当年系统为准。</p></div></div><p class="diagram-note">历史规则中还可能存在同一学院内部的非平行志愿。不要用一张旧图替代当年系统规则。</p><div class="diagram-actions"><button class="btn btn-light" data-modal-alt="新生选拔志愿填报与流程参考图" data-modal-image="selection-flowchart.webp">放大原图</button><a class="btn btn-outline" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank">核对官方系统</a></div></article>
+<div class="flow-evidence">
+<article class="evidence-card reveal"><span class="badge">官方历史规则</span><h3>钱学森学院内部志愿示例</h3><p>2024 指南将钱学森班四个模块与“拔尖五班＋人工智能班”分为两类；两类各可报 1 个，同时填报时为非平行志愿。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" rel="noopener" target="_blank">查看原文 ↗</a></article>
+<article class="evidence-card light reveal"><span class="badge">提交前必查</span><h3>六项信息逐项确认</h3><p>报名资格、可填数量、A/B 志愿、平行/非平行、笔试科目、确认截止时间。</p><button data-modal-alt="新生选拔志愿填报与流程参考图" data-modal-image="selection-flowchart.webp">查看流程参考图 ↗</button></article>
+</div>
+</div>
+<div class="process-track reveal">
+<div class="process-grid">
+<div class="process-step"><div class="process-dot">01</div><strong>报名</strong><small>关注开放与截止时间</small></div>
+<div class="process-step"><div class="process-dot">02</div><strong>资格审查</strong><small>核验专业与选科条件</small></div>
+<div class="process-step"><div class="process-dot">03</div><strong>笔试</strong><small>数学、物理、英语等</small></div>
+<div class="process-step"><div class="process-dot">04</div><strong>面试</strong><small>志趣、表达与综合素养</small></div>
+<div class="process-step"><div class="process-dot">05</div><strong>确认</strong><small>按时确认录取意向</small></div>
+<div class="process-step"><div class="process-dot">06</div><strong>录取</strong><small>以官方系统结果为准</small></div>
+</div>
+<div class="risk-row"><span>逾期未报名</span><span>资格审查未通过</span><span>笔试未达线</span><span>综合排名未入计划</span><span>逾期未确认</span></div>
+</div>
+</div>
 </section>
 <section class="section alt" id="materials">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">05 / DOWNLOAD</div><div class="section-title"><h2>选拔资料分享</h2><p>保留完整原始包，也提供轻量合集、单份试卷和备考说明。资料只用于熟悉题型，不代表未来命题。</p></div></div>
-    <div class="download-feature">
-      <article class="bundle-card reveal"><small>COMPLETE ARCHIVE · ≈ 9.9 MB</small><h3>往年真题与选拔材料完整包</h3><p>保留用户上传压缩包的原始目录与文件，包括数学、物理、英语样题、白皮书及参考答案。内容未经逐题校验，仅供交流学习。</p><a class="btn" href="xjtu-selection-past-papers-full.zip" download>下载完整 ZIP ↓</a></article>
-      <div class="file-stack">
-        <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2016</span><h4>2016 入学考试数学题</h4><p>填空、证明、数学建模与算法设计。</p><a href="xjtu-2016-math-exam.pdf" target="_blank" rel="noopener">预览 / 下载 ↗</a></article>
-        <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2023–24</span><h4>2023—2024 数学考试题</h4><p>2 页、满分 100 分，含选择填空与解答。</p><a href="xjtu-2023-2024-math-exam.pdf" target="_blank" rel="noopener">预览 / 下载 ↗</a></article>
-        <article class="file-card reveal" data-ext="ZIP"><span class="file-type">LITE PACK · 745 KB</span><h4>精选轻量资料包</h4><p>适合手机快速下载与临时浏览。</p><a href="xjtu-selection-past-papers-lite.zip" download>下载轻量 ZIP ↓</a></article>
-        <article class="file-card reveal" data-ext="DOC"><span class="file-type">PREP NOTES</span><h4>报考流程与备考说明</h4><p>时间节奏、三科准备和面试建议。</p><a href="xjtu-selection-prep-notes.docx" download>下载 DOCX ↓</a></article>
-      </div>
-    </div>
-    <div class="prep-guide reveal"><div class="prep-intro"><small>PREPARATION NOTES</small><h3>军训阶段：一边训练，一边盯紧选拔节点</h3><p>学生材料建议优先收藏新生进校选拔系统、教务处与钱学森学院页面，报名、考试和录取通常集中在军训阶段。</p></div><div class="prep-cards"><div class="prep-card"><span>数学 · 物理</span><strong>高中基础＋强基思路</strong><p>先补概念和公式，再做综合题。</p></div><div class="prep-card"><span>英语</span><strong>按四六级题型准备</strong><p>训练听力、阅读、翻译和写作。</p></div><div class="prep-card"><span>面试</span><strong>准备框架，不押题</strong><p>表达清楚、自信，比背模板更重要。</p></div></div></div>
-  </div>
+<div class="container">
+<div class="section-head reveal">
+<div class="section-index">06 / DOWNLOAD</div>
+<div class="section-title"><h2>选拔资料分享</h2><p>提供完整整理包、轻量合集、单份试卷、备考说明，以及新增的 2016 数学试卷原始实拍。资料只用于熟悉题型，不代表未来命题。</p></div>
+<div class="section-action"><a class="text-link" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整整理包</a></div>
+</div>
+<div class="download-feature">
+<article class="bundle-card reveal"><small>COMPLETE ARCHIVE · ≈ 12.1 MiB</small><h3>往年真题与选拔资料完整整理包</h3><p>包含历年数学、物理与英语资料、参考答案、白皮书、备考说明，并已加入 2016 数学试卷原始实拍与合并 PDF。内容未经逐题校验，仅供交流学习。</p><a class="btn" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整 ZIP ↓</a></article>
+<div class="file-stack">
+<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2016</span><h4>2016 入学考试数学题</h4><p>排版版：填空、证明、数学建模与算法设计。</p><a href="xjtu-2016-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
+<article class="file-card file-card-new reveal" data-ext="NEW"><span class="file-type">ORIGINAL · 4 PAGES</span><h4>2016 数学原始实拍合并版</h4><p>四张试卷照片合并为 PDF，便于连续阅读。</p><a href="xjtu-2016-math-original-scan.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
+<article class="file-card file-card-new reveal" data-ext="ZIP"><span class="file-type">ORIGINAL PHOTOS</span><h4>2016 数学原始照片包</h4><p>保留四张高清 PNG，并附合并 PDF。</p><a download="" href="xjtu-2016-math-original-photos.zip">下载照片 ZIP ↓</a></article>
+<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2023–24</span><h4>2023—2024 数学考试题</h4><p>2 页、满分 100 分，含选择填空与解答。</p><a href="xjtu-2023-2024-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
+<article class="file-card reveal" data-ext="ZIP"><span class="file-type">LITE PACK · 745 KB</span><h4>精选轻量资料包</h4><p>适合手机快速下载与临时浏览。</p><a download="" href="xjtu-selection-past-papers-lite.zip">下载轻量 ZIP ↓</a></article>
+<article class="file-card reveal" data-ext="DOC"><span class="file-type">PREP NOTES</span><h4>报考流程与备考说明</h4><p>时间节奏、三科准备和面试建议。</p><a download="" href="xjtu-selection-prep-notes.docx">下载 DOCX ↓</a></article>
+</div>
+</div>
+<section aria-labelledby="scanTitle" class="scan-showcase reveal">
+<div class="scan-showcase-head"><div><small>NEW MATERIAL · 2016 ORIGINAL</small><h3 id="scanTitle">2016 数学试卷原始实拍</h3><p>点击任意缩略图即可放大查看。四页依次覆盖填空题、证明题、数学建模与算法设计等内容。</p></div><div class="scan-actions"><a class="btn btn-dark" href="xjtu-2016-math-original-scan.pdf" rel="noopener" target="_blank">打开合并 PDF ↗</a><a class="btn btn-light" download="" href="xjtu-2016-math-original-photos.zip">下载原图 ZIP ↓</a></div></div>
+<div class="scan-grid">
+<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 1 页" data-modal-image="xjtu-2016-math-original-01.png" type="button"><img alt="2016 数学试卷原始实拍第 1 页" src="xjtu-2016-math-original-01.webp"/><span><b>01</b> 填空题 1—9</span></button>
+<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 2 页" data-modal-image="xjtu-2016-math-original-02.png" type="button"><img alt="2016 数学试卷原始实拍第 2 页" src="xjtu-2016-math-original-02.webp"/><span><b>02</b> 填空题 10—14 · 证明</span></button>
+<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 3 页" data-modal-image="xjtu-2016-math-original-03.png" type="button"><img alt="2016 数学试卷原始实拍第 3 页" src="xjtu-2016-math-original-03.webp"/><span><b>03</b> 七盏灯建模 · π 算法</span></button>
+<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 4 页" data-modal-image="xjtu-2016-math-original-04.png" type="button"><img alt="2016 数学试卷原始实拍第 4 页" src="xjtu-2016-math-original-04.webp"/><span><b>04</b> 函数不等式证明</span></button>
+</div>
 </section>
-<section class="section" id="courses">
-  <div class="container">
-    <div class="section-head reveal"><div class="section-index">06 / COURSE</div><div class="section-title"><h2>网课与预习资源</h2><p>先用真题确定薄弱点，再按数学、大学物理和英语模块补基础。第三方课程不代表学校官方推荐。</p></div></div>
-    <article class="creator reveal"><div class="creator-art"><div class="bili-mark">゜-゜</div><h3>萌新小童呀</h3><p>西交学习 · 科普 · 技术分享</p></div><div class="creator-copy"><small>PUBLIC LECTURE</small><h3>大学物理基础知识公益讲座</h3><p>用于从高中物理向大学物理过渡，重点建立力学、微积分表达和建模意识。当前使用账号名与课程关键词检索入口，避免误链同名账号。</p><div class="creator-actions"><a class="btn btn-primary" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" target="_blank" rel="noopener">查找公益大物课程 ↗</a><a class="btn btn-light" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">搜索并关注 UP 主</a></div></div></article>
-    <div class="course-grid">
-      <article class="course-card reveal"><div class="course-symbol">∫</div><h3>数学竞赛 / 强基基础</h3><p>从函数、数列、不等式、组合、解析几何和证明入手，先搭方法框架再做综合题。</p><div class="course-links"><a href="https://search.bilibili.com/all?keyword=%E5%BC%BA%E5%9F%BA%E6%95%B0%E5%AD%A6%20%E7%AB%9E%E8%B5%9B%E5%9F%BA%E7%A1%80" target="_blank" rel="noopener">B 站检索 ↗</a><a href="https://www.icourse163.org/search.htm?search=%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B" target="_blank" rel="noopener">MOOC ↗</a></div></article>
-      <article class="course-card reveal"><div class="course-symbol">Δ</div><h3>大学物理与高数衔接</h3><p>复习力学、电磁学和高中数学，再理解极限、导数、积分和向量在物理模型中的表达。</p><div class="course-links"><a href="https://www.icourse163.org/search.htm?search=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86" target="_blank" rel="noopener">大学物理 MOOC ↗</a><a href="https://www.icourse163.org/search.htm?search=%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6" target="_blank" rel="noopener">高等数学 MOOC ↗</a></div></article>
-      <article class="course-card reveal"><div class="course-symbol">CET</div><h3>英语四级备考</h3><p>用官方样题定位听力、阅读、翻译和写作弱项，再按模块训练。</p><div class="course-links"><a href="https://cet.neea.edu.cn/" target="_blank" rel="noopener">CET 官网 ↗</a><a href="https://search.bilibili.com/all?keyword=%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%20%E7%B3%BB%E7%BB%9F%E8%AF%BE" target="_blank" rel="noopener">B 站系统课 ↗</a></div></article>
-    </div>
-  </div>
+<div class="prep-guide reveal"><div class="prep-intro"><small>PREPARATION NOTES</small><h3>军训阶段：一边训练，一边盯紧选拔节点</h3><p>建议优先收藏新生进校选拔系统、教务处与钱学森学院页面，报名、考试和录取通常集中在军训阶段。</p></div><div class="prep-cards"><div class="prep-card"><span>数学 · 物理</span><strong>高中基础＋强基思路</strong><p>先补概念和公式，再做综合题。</p></div><div class="prep-card"><span>英语</span><strong>按四六级题型准备</strong><p>训练听力、阅读、翻译和写作。</p></div><div class="prep-card"><span>面试</span><strong>准备框架，不押题</strong><p>表达清楚、自信，比背模板更重要。</p></div></div></div>
+</div>
 </section>
+
 <section class="source-band">
-  <div class="container source-layout">
-    <div class="source-intro reveal"><div class="eyebrow" style="color:var(--gold)">Sources</div><h2>主要来源与更新原则</h2><p>官方页面用于确认政策；学生资料用于理解、复习和经验参考。两类信息在本站中明确区分。</p></div>
-    <div class="source-list">
-      <a class="source-link reveal" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><span>01</span><div><strong>新生进校选拔系统</strong><small>通知、报名、笔试、面试与录取</small></div><b>↗</b></a>
-      <a class="source-link reveal" href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" target="_blank" rel="noopener"><span>02</span><div><strong>西安交大教务处</strong><small>教学通知与校级政策</small></div><b>↗</b></a>
-      <a class="source-link reveal" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" target="_blank" rel="noopener"><span>03</span><div><strong>钱学森学院官方介绍</strong><small>学院定位、培养机制与官方入口</small></div><b>↗</b></a>
-      <a class="source-link reveal" href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener"><span>04</span><div><strong>西交视觉形象系统</strong><small>校标、标准字与视觉资源</small></div><b>↗</b></a>
-    </div>
-  </div>
+<div class="container source-layout">
+<div class="source-intro reveal"><div class="eyebrow" style="color:var(--gold)">Sources</div><h2>主要来源与更新原则</h2><p>官方页面用于确认政策；经验资料用于理解、复习和辅助判断。两类信息在本站中明确区分。</p></div>
+<div class="source-list">
+<a class="source-link reveal" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank"><span>01</span><div><strong>新生进校选拔系统</strong><small>通知、报名、笔试、面试与录取</small></div><b>↗</b></a>
+<a class="source-link reveal" href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" rel="noopener" target="_blank"><span>02</span><div><strong>西安交大教务处</strong><small>教学通知与校级政策</small></div><b>↗</b></a>
+<a class="source-link reveal" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" rel="noopener" target="_blank"><span>03</span><div><strong>钱学森学院官方介绍</strong><small>学院定位、培养机制与官方入口</small></div><b>↗</b></a>
+<a class="source-link reveal" href="https://vi.xjtu.edu.cn/" rel="noopener" target="_blank"><span>04</span><div><strong>西交视觉形象系统</strong><small>校标、标准字与视觉资源</small></div><b>↗</b></a>
+</div>
+</div>
 </section>
 <section class="disclaimer" id="disclaimer">
-  <div class="container disclaimer-card reveal"><div class="disclaimer-icon">i</div><div><h2>免责声明</h2><p class="disclaimer-main">本网站为西安交通大学自动化钱2401班学生童瀚文个人整理，仅供交流学习使用，请勿用做商业用途。</p><p>本网站不是西安交通大学官方网站，不代表学校、学院或书院立场。招生、选拔、培养和学籍政策请以西安交通大学官方通知及报名系统为准。往年真题、白皮书和备考资料的版权归原作者或相关单位所有；如有侵权或内容需要更正，请通过 GitHub 仓库反馈。</p><p><strong>浏览量说明：</strong>今日与累计访问量由第三方公共计数接口处理；计数服务不可用时仅显示“暂不可用”，不影响其他内容。</p><div class="disclaimer-actions"><a class="btn btn-primary" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">关注 B 站：萌新小童呀 ↗</a><a class="btn btn-light" href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io/issues" target="_blank" rel="noopener">反馈错误或更新线索</a></div></div></div>
+<div class="container disclaimer-card reveal"><div class="disclaimer-icon">i</div><div><h2>免责声明</h2><p class="disclaimer-main">本网站为西安交通大学自动化钱2401班学生童瀚文个人整理，仅供交流学习使用，请勿用做商业用途。</p><p>本网站不是西安交通大学官方网站，不代表学校、学院或书院立场。招生、选拔、培养和学籍政策请以西安交通大学官方通知及报名系统为准。往年真题、白皮书和备考资料的版权归原作者或相关单位所有；如有侵权或内容需要更正，请通过 GitHub 仓库反馈。</p><p><strong>浏览量说明：</strong>今日与累计访问量由第三方公共计数接口处理；计数服务不可用时仅显示“暂不可用”，不影响其他内容。</p><div class="disclaimer-actions"><a class="btn btn-primary" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank">关注 B 站：萌新小童呀 ↗</a><a class="btn btn-light" href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io/issues" rel="noopener" target="_blank">反馈错误或更新线索</a></div></div></div>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>西安交通大学入校选拔指南</strong><span>童瀚文个人整理 · 非官方网站 · 2026</span></div><div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener">GitHub</a></div></div></footer>
-<div class="floating-rail"><a class="float-btn primary" href="#top" aria-label="返回顶部">↑</a></div>
-<dialog class="image-modal" id="imageModal"><button class="modal-close" type="button" aria-label="关闭">×</button><img src="" alt=""><p></p></dialog>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>西安交通大学入校选拔指南</strong><span>童瀚文个人整理 · 非官方网站 · 2026</span></div><div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" rel="noopener" target="_blank">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" rel="noopener" target="_blank">GitHub</a></div></div></footer>
+<div class="floating-rail"><a aria-label="在 B 站搜索并关注萌新小童呀" class="float-btn bili" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank" title="B站：萌新小童呀">B</a><a aria-label="返回顶部" class="float-btn primary" href="#top">↑</a></div>
+<dialog class="image-modal" id="imageModal"><button aria-label="关闭" class="modal-close" type="button">×</button><img alt="" src=""/><p></p></dialog>
 <script>
 (() => {
   const navToggle=document.querySelector('.nav-toggle'); const nav=document.getElementById('mainNav');
