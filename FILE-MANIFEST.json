@@ -1,0 +1,191 @@
+{
+  "version": "V5.0.0",
+  "generated": "2026-07-23",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "404.html",
+      "bytes": 1156,
+      "sha256": "123e4caca313ed06972d5d354b5c6567412e191e2a43e048a7351e4eb65f5865"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1156,
+      "sha256": "3cbffc16b8a2ed50ab2283c30b923552d4f908bf1a7838048617ea49a27faedb"
+    },
+    {
+      "path": "VERSION.txt",
+      "bytes": 18,
+      "sha256": "09f825902f3f54128d8286bcbf183e9ccb1f878dcf87a2df9d83b55cb749f928"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 201231,
+      "sha256": "553c197e4278e63fcbb8b91010d1a3d481c65670e17c728787ed5b45328f15b7"
+    },
+    {
+      "path": "bilibili-mengxin-xiaotong-qr.webp",
+      "bytes": 8806,
+      "sha256": "5d633043d297f66f63dfead98ba94d593cecb19f70145205d0ae0cae522aed5c"
+    },
+    {
+      "path": "classes-summary-2026.webp",
+      "bytes": 217026,
+      "sha256": "3cc17dbf220b073d1ddddb3788d6db954b1b10fb33353d0500b01016d9f9882c"
+    },
+    {
+      "path": "favicon.png",
+      "bytes": 81288,
+      "sha256": "a54e13daa5c8125d0222059c8d7dd8a6add1613c8ec7100b963151b188eb30b4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 77929,
+      "sha256": "f5308ffd131fe82878b2f15077c685b05006522e2216fd8776fdc41722a45e01"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 81,
+      "sha256": "8ba0b0c0b92f27d602a2ae6de1289df263c85226fb37bf1518b59c7c48ff5b2c"
+    },
+    {
+      "path": "selection-flowchart.webp",
+      "bytes": 202982,
+      "sha256": "1450ea4e4931934e80cd45e8548fe377c01a991f6a91c350eae96ca7ec236ac5"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 256,
+      "sha256": "5b3f67cb3151a664d053656fd66c6a50c7aea3be107fab0ca1f9865f980117b9"
+    },
+    {
+      "path": "xjtu-2016-math-exam.pdf",
+      "bytes": 185553,
+      "sha256": "90681bdabdff09e0f2cbcbd5fc8342e3d70c91ed247a44119046cca095b126cd"
+    },
+    {
+      "path": "xjtu-2016-math-original-01.png",
+      "bytes": 757478,
+      "sha256": "7ebde9392ed1cd1876dab1db97336e792e4eec148651d7e8aece766c611cffd6"
+    },
+    {
+      "path": "xjtu-2016-math-original-01.webp",
+      "bytes": 80592,
+      "sha256": "40c0529cc135ec3c7399267daa0a2a84add637ddea35a1c2cea37d0ab67a6a6f"
+    },
+    {
+      "path": "xjtu-2016-math-original-02.png",
+      "bytes": 355072,
+      "sha256": "88e11659ed5edc7fea6b822afceef27d2a25198f5d1c2ab204f2d306b669945c"
+    },
+    {
+      "path": "xjtu-2016-math-original-02.webp",
+      "bytes": 47336,
+      "sha256": "ba96cc606550489829c70eb0cbf9205e3523bb2395ff1655265fa30c2e9fc201"
+    },
+    {
+      "path": "xjtu-2016-math-original-03.png",
+      "bytes": 329070,
+      "sha256": "af89f9c843c09d677db366904725c4566271d74ae4d0ca94ba4c440693fc9edd"
+    },
+    {
+      "path": "xjtu-2016-math-original-03.webp",
+      "bytes": 34582,
+      "sha256": "888bc458aea2ff73015c9b0bceaa7d5c8f3fdc967fb65fa193eafce34f445d54"
+    },
+    {
+      "path": "xjtu-2016-math-original-04.png",
+      "bytes": 387454,
+      "sha256": "9b1e809a79e61659625a4e814f8559131308103f1ef987f9330de9871b3c6696"
+    },
+    {
+      "path": "xjtu-2016-math-original-04.webp",
+      "bytes": 36262,
+      "sha256": "d379bfd136b4c5dc17993226be1eafbfb76083717d5509250b30eec9fd6533de"
+    },
+    {
+      "path": "xjtu-2016-math-original-photos.zip",
+      "bytes": 2292307,
+      "sha256": "74d5e5f7c0dc84f86225ab67242c90a7a9e878af8b0b58f414cf4ea6402e81a9"
+    },
+    {
+      "path": "xjtu-2016-math-original-scan.pdf",
+      "bytes": 512413,
+      "sha256": "e5e5a4a4c14f1c3b57026f0480e4fd4803db3fd43dc7c626deae7083f9bfc965"
+    },
+    {
+      "path": "xjtu-2016-math-with-solutions.pdf",
+      "bytes": 2469573,
+      "sha256": "ca468e6c29e7f564189aeaf8d3e282f55dd45b2ab34c7bf113db910634b644d5"
+    },
+    {
+      "path": "xjtu-2017-math-exam.pdf",
+      "bytes": 483202,
+      "sha256": "3da9c125bd81f14b4bc93fbcbe9bea540c9854825a6a6431945e9dbc76bed932"
+    },
+    {
+      "path": "xjtu-2019-math-exam.pdf",
+      "bytes": 140662,
+      "sha256": "21d735bdaf537a13ec2062853118f7c34fcae86288bc0e410b5243b329b330bd"
+    },
+    {
+      "path": "xjtu-2019-selection-prep.pdf",
+      "bytes": 316957,
+      "sha256": "4fb62fc6a609eca0f0c41ddb53877017cc8cb2f69fba8602e75aabda9af21dbc"
+    },
+    {
+      "path": "xjtu-2020-math-exam.pdf",
+      "bytes": 729481,
+      "sha256": "5de312cad6e2e5c62803ccf8da5673039c390b96daaa2446189f8e2bd0f8d548"
+    },
+    {
+      "path": "xjtu-2022-math-physics-with-answers.pdf",
+      "bytes": 3980675,
+      "sha256": "a01abe8b12f143a734a9a79448dee4b42430f2dbc8db0dfdc5d63142ba2c7cea"
+    },
+    {
+      "path": "xjtu-2023-2024-math-exam.pdf",
+      "bytes": 62902,
+      "sha256": "d0995b594d14fff9fe6b8ddc03e19740f3d7038b3bd42dc3c7110acf13d0202f"
+    },
+    {
+      "path": "xjtu-2023-selection-whitepaper.pdf",
+      "bytes": 1247647,
+      "sha256": "9e5cebc22087c24f2124d8db1c6c8420360d55d3c70775017122345b0805ae74"
+    },
+    {
+      "path": "xjtu-english-placement-sample.pdf",
+      "bytes": 770312,
+      "sha256": "98ea877861cacfb77fc8fb993203402f803dd53d50574e5105f8e73fe8a0c790"
+    },
+    {
+      "path": "xjtu-logo-transparent.png",
+      "bytes": 249182,
+      "sha256": "db47453b2a5b3feb73e62dc7c04f933a6703ae2adf5c4b3ba531f61dcace582a"
+    },
+    {
+      "path": "xjtu-recent-math-reference-answers.pdf",
+      "bytes": 831403,
+      "sha256": "b3902908cb580d6c0ff249e187a952ad532cb9c92740744aca65911a716ea7d1"
+    },
+    {
+      "path": "xjtu-selection-materials-complete-2026.zip",
+      "bytes": 12699492,
+      "sha256": "417f36b369fbb9d49246d9e1363780429571843c121eeb259f974ad6e69207ed"
+    },
+    {
+      "path": "xjtu-selection-past-papers-lite.zip",
+      "bytes": 2102534,
+      "sha256": "b151385a9290a238ddf43ca3d29918c88683237de043bc2d5ddda1ec5b19f178"
+    },
+    {
+      "path": "xjtu-selection-prep-notes.docx",
+      "bytes": 16248,
+      "sha256": "b0d185b5c61ed37c0580fb068eb53e45a00182373019bf0c5f029d16ac237f80"
+    }
+  ]
+}
