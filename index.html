@@ -1,498 +1,332 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#b21f2d" />
-  <meta name="description" content="西安交通大学入校选拔个人整理站：官方通知、特色班型、选拔流程、往年真题与网课资源。" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="西安交通大学入校选拔指南" />
-  <meta property="og:description" content="集中整理选拔通知、政策、流程、真题和网课资源。非官方网站，以西交官方通知为准。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hanwentong0624-bot.github.io/" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>西安交通大学入校选拔指南</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8d1530">
+<meta name="description" content="西安交通大学入校选拔个人整理站：官方通知、特色班型、选拔流程、往年真题与网课资源。">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="西安交通大学入校选拔指南">
+<meta property="og:description" content="把通知、班型、志愿关系、真题和学习资源整理成一张清晰地图。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hanwentong0624-bot.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>西安交通大学入校选拔指南</title>
+<style>
+:root{
+  --red:#9d1735;--red-deep:#681022;--red-soft:#f8e9ed;
+  --navy:#0f2a3d;--navy-2:#173c55;--blue:#2d6681;
+  --gold:#c7952d;--gold-soft:#f5edda;
+  --paper:#f7f5f1;--paper-2:#efece6;--white:#fff;
+  --ink:#182129;--muted:#68737c;--line:rgba(24,33,41,.13);
+  --shadow:0 24px 70px rgba(22,32,40,.12);
+  --shadow-sm:0 14px 38px rgba(22,32,40,.08);
+  --radius:26px;--radius-sm:16px;
+  --container:min(1180px,calc(100vw - 40px));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-width:100%;display:block}
+::selection{background:var(--red);color:#fff}
+.container{width:var(--container);margin-inline:auto}
+.skip-link{position:fixed;z-index:9999;left:16px;top:-60px;background:#fff;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);transition:.2s}.skip-link:focus{top:16px}
+.scroll-progress{position:fixed;z-index:1000;left:0;top:0;height:3px;width:0;background:var(--gold);box-shadow:0 0 16px rgba(199,149,45,.7)}
+.utility-bar{background:var(--navy);color:rgba(255,255,255,.78);font-size:12px;letter-spacing:.03em}.utility-inner{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:20px}.utility-left,.utility-right{display:flex;align-items:center;gap:14px}.utility-badge{display:inline-flex;align-items:center;gap:7px;color:#fff}.utility-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(199,149,45,.12)}.utility-bar a{color:#fff;border-bottom:1px solid rgba(255,255,255,.28)}
+.site-header{position:sticky;top:0;z-index:900;background:rgba(247,245,241,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(24,33,41,.08)}
+.header-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:15px;min-width:260px}.brand img{width:190px;height:auto}.brand-copy{padding-left:15px;border-left:1px solid var(--line);line-height:1.2}.brand-copy strong{display:block;font-size:15px;letter-spacing:.05em}.brand-copy span{font-size:10px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+.main-nav{display:flex;align-items:center;gap:4px;padding:5px;background:#fff;border:1px solid rgba(24,33,41,.08);border-radius:999px;box-shadow:0 8px 24px rgba(24,33,41,.05)}.main-nav a{padding:9px 13px;border-radius:999px;color:#46515a;font-size:13px;transition:.2s}.main-nav a:hover,.main-nav a.active{background:var(--navy);color:#fff}
+.nav-toggle{display:none;width:44px;height:44px;border:0;border-radius:50%;background:var(--navy);padding:12px;cursor:pointer}.nav-toggle span{display:block;height:2px;background:#fff;margin:4px 0;border-radius:99px}
+.hero{position:relative;overflow:hidden;min-height:680px;padding:86px 0 48px;background:var(--paper)}
+.hero::before{content:"1896";position:absolute;right:-3vw;top:-105px;font:900 clamp(180px,28vw,470px)/1 Arial,sans-serif;color:rgba(157,23,53,.035);letter-spacing:-.09em;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.hero-layout{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:74px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--red);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow::before{content:"";width:36px;height:2px;background:var(--red)}
+.hero h1{margin:24px 0 22px;font-family:"STZhongsong","Songti SC","Noto Serif SC",serif;font-size:clamp(48px,6vw,82px);line-height:1.06;letter-spacing:-.045em;font-weight:800}.hero h1 span{display:block;color:var(--red);position:relative;width:max-content;max-width:100%}.hero h1 span::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:10px;background:var(--gold-soft);z-index:-1;transform:skewX(-12deg)}
+.hero-lead{max-width:650px;margin:0 0 30px;color:#53606a;font-size:17px;line-height:1.9}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 20px;border-radius:999px;border:1px solid transparent;font-size:14px;font-weight:800;transition:.22s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--red);color:#fff;box-shadow:0 12px 30px rgba(157,23,53,.22)}.btn-primary:hover{background:var(--red-deep)}.btn-dark{background:var(--navy);color:#fff}.btn-light{background:#fff;border-color:var(--line)}.btn-outline{border-color:rgba(157,23,53,.3);color:var(--red);background:transparent}
+.hero-foot{display:flex;gap:24px;align-items:center;margin-top:34px;color:var(--muted);font-size:12px}.hero-foot span{display:flex;align-items:center;gap:8px}.hero-foot span::before{content:"";width:5px;height:5px;background:var(--gold);border-radius:50%}
+.compass{position:relative;min-height:500px;display:grid;place-items:center}.compass-card{position:relative;width:min(480px,100%);aspect-ratio:1;border-radius:50%;background:#fff;border:1px solid rgba(24,33,41,.09);box-shadow:var(--shadow)}.compass-card::before,.compass-card::after{content:"";position:absolute;border-radius:50%;border:1px dashed rgba(157,23,53,.18);inset:13%}.compass-card::after{inset:29%;border-color:rgba(15,42,61,.18)}
+.compass-grid{position:absolute;inset:0;border-radius:50%;overflow:hidden;background-image:linear-gradient(rgba(15,42,61,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(15,42,61,.025) 1px,transparent 1px);background-size:28px 28px;mask-image:radial-gradient(circle,#000 55%,transparent 74%)}
+.compass-core{position:absolute;inset:34%;z-index:3;display:grid;place-items:center;text-align:center;border-radius:50%;background:var(--red);color:#fff;box-shadow:0 20px 50px rgba(157,23,53,.32)}.compass-core small{display:block;font-size:10px;letter-spacing:.18em;opacity:.7}.compass-core strong{font-family:"STZhongsong","Songti SC",serif;font-size:24px;line-height:1.2}.compass-core em{font-style:normal;font-size:11px;opacity:.8}
+.orbit-item{position:absolute;z-index:4;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.96);padding:10px 13px;border:1px solid rgba(24,33,41,.09);border-radius:999px;box-shadow:0 10px 25px rgba(24,33,41,.08);font-size:12px;font-weight:800;white-space:nowrap}.orbit-item i{width:8px;height:8px;border-radius:50%;background:var(--gold)}.orbit-item:nth-of-type(1){left:3%;top:22%}.orbit-item:nth-of-type(2){right:-2%;top:27%}.orbit-item:nth-of-type(3){right:4%;bottom:20%}.orbit-item:nth-of-type(4){left:3%;bottom:18%}.orbit-item:nth-of-type(5){left:37%;top:2%}.orbit-item:nth-of-type(6){left:37%;bottom:2%}
+.compass-note{position:absolute;right:0;bottom:32px;z-index:6;width:190px;padding:16px;border-radius:16px;background:var(--navy);color:#fff;box-shadow:var(--shadow-sm);transform:rotate(-2deg)}.compass-note span{font-size:10px;color:#a9bfcb;letter-spacing:.14em}.compass-note strong{display:block;margin-top:4px;font-size:14px}.compass-note p{margin:6px 0 0;font-size:11px;color:#cbd8df}
+.metrics{position:relative;margin-top:54px;display:grid;grid-template-columns:1.3fr repeat(4,1fr);background:var(--navy);color:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-sm)}.metric-intro{padding:24px 28px;background:var(--red)}.metric-intro small{display:block;font-size:10px;letter-spacing:.16em;opacity:.72}.metric-intro strong{display:block;margin-top:3px;font-size:18px}.metric{padding:21px 22px;border-left:1px solid rgba(255,255,255,.1)}.metric span{display:block;font-size:11px;color:#a9beca}.metric strong{display:block;margin:2px 0;font-size:24px;font-variant-numeric:tabular-nums}.metric small{font-size:10px;color:#809dab}
+.quick-start{padding:28px 0 10px}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.quick-card{position:relative;min-height:138px;padding:24px;border-radius:22px;background:#fff;border:1px solid rgba(24,33,41,.08);box-shadow:0 8px 26px rgba(24,33,41,.05);overflow:hidden;transition:.25s}.quick-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}.quick-card::after{content:"↗";position:absolute;right:20px;top:18px;color:var(--red);font-size:18px}.quick-no{font:900 46px/1 Arial;color:rgba(157,23,53,.08);position:absolute;right:16px;bottom:6px}.quick-card small{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.12em}.quick-card strong{display:block;margin:12px 0 5px;font-size:18px}.quick-card p{margin:0;color:var(--muted);font-size:13px}
+.section{padding:104px 0}.section.alt{background:var(--paper-2)}.section.dark{background:var(--navy);color:#fff}.section-head{display:grid;grid-template-columns:130px 1fr auto;gap:30px;align-items:start;margin-bottom:44px}.section-index{font:800 13px/1 Arial;letter-spacing:.15em;color:var(--red);padding-top:12px}.section.dark .section-index{color:var(--gold)}.section-title h2{margin:0;font-family:"STZhongsong","Songti SC",serif;font-size:clamp(34px,4vw,52px);line-height:1.2;letter-spacing:-.035em}.section-title p{max-width:680px;margin:12px 0 0;color:var(--muted);font-size:15px}.section.dark .section-title p{color:#abc0cb}.section-action{padding-top:10px}.text-link{display:inline-flex;align-items:center;gap:8px;color:var(--red);font-size:13px;font-weight:800}.section.dark .text-link{color:#fff}.text-link::after{content:"↗"}
+.notice-feature{display:grid;grid-template-columns:190px 1fr auto;gap:30px;align-items:center;padding:32px;border-radius:var(--radius);background:var(--red);color:#fff;box-shadow:0 22px 60px rgba(157,23,53,.2);overflow:hidden;position:relative}.notice-feature::before{content:"NOTICE";position:absolute;right:-10px;bottom:-28px;font:900 90px/1 Arial;color:rgba(255,255,255,.06);letter-spacing:-.06em}.notice-date{border-right:1px solid rgba(255,255,255,.22)}.notice-date small{display:block;font-size:10px;letter-spacing:.18em;opacity:.7}.notice-date strong{font-size:42px;line-height:1}.notice-feature h3{margin:0 0 8px;font-size:23px}.notice-feature p{margin:0;max-width:720px;color:rgba(255,255,255,.78);font-size:13px}.notice-feature .btn{background:#fff;color:var(--red);white-space:nowrap}
+.notice-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.notice-card{position:relative;padding:25px;border-radius:20px;background:#fff;border:1px solid rgba(24,33,41,.08);min-height:210px;transition:.22s}.notice-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}.notice-card time{display:flex;align-items:center;justify-content:space-between;color:var(--red);font-weight:900;font-size:12px}.notice-card time span{color:var(--muted);font-weight:600}.notice-card h3{margin:24px 0 10px;font-size:17px;line-height:1.45}.notice-card p{margin:0;color:var(--muted);font-size:13px}.notice-card .arrow{position:absolute;right:20px;bottom:18px;width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--red)}
+.notice-source{display:flex;align-items:center;gap:12px;margin-top:18px;padding:14px 18px;border:1px dashed rgba(157,23,53,.25);border-radius:15px;color:#5d6870;font-size:12px}.notice-source strong{color:var(--red);white-space:nowrap}
+.policy-tabs{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}.tab-btn{border:1px solid var(--line);background:#fff;padding:11px 18px;border-radius:999px;font-size:13px;font-weight:800;cursor:pointer;transition:.2s}.tab-btn:hover,.tab-btn.active{background:var(--navy);border-color:var(--navy);color:#fff}.tab-panel[hidden]{display:none}
+.policy-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.policy-hero{position:relative;min-height:440px;padding:38px;border-radius:28px;background:var(--navy);color:#fff;overflow:hidden;box-shadow:var(--shadow-sm)}.policy-hero::after{content:"";position:absolute;width:260px;height:260px;border:70px solid rgba(255,255,255,.035);border-radius:50%;right:-70px;bottom:-70px}.policy-code{font:900 80px/1 Arial;color:rgba(255,255,255,.07);position:absolute;right:26px;top:22px}.policy-hero small{color:var(--gold);font-weight:800;letter-spacing:.14em}.policy-hero h3{font-family:"STZhongsong","Songti SC",serif;font-size:34px;margin:15px 0 12px}.policy-hero p{max-width:620px;color:#bed0d9}.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.pill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.1);font-size:11px}.policy-hero .text-link{position:absolute;left:38px;bottom:35px;color:#fff}
+.policy-side{display:grid;grid-template-columns:1fr 1fr;gap:18px}.policy-mini{position:relative;padding:25px;border-radius:22px;background:#fff;border:1px solid rgba(24,33,41,.08);min-height:210px;overflow:hidden}.policy-mini:nth-child(3){grid-column:1/-1;min-height:200px;background:var(--gold-soft)}.policy-mini .num{font:900 40px/1 Arial;color:rgba(157,23,53,.1)}.policy-mini h4{font-size:18px;margin:17px 0 8px}.policy-mini p{margin:0;color:var(--muted);font-size:12px}.policy-mini a{position:absolute;bottom:20px;left:25px;color:var(--red);font-size:12px;font-weight:800}
+.policy-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.policy-stat{background:#fff;border:1px solid rgba(24,33,41,.08);border-radius:18px;padding:20px}.policy-stat span{color:var(--muted);font-size:11px}.policy-stat strong{display:block;font-size:28px;color:var(--red);line-height:1.2}.policy-stat small{font-size:10px;color:#8a949b}
+.dual-college{display:grid;grid-template-columns:1fr 130px 1fr;align-items:center;gap:22px}.college-card{min-height:270px;padding:32px;border-radius:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden}.college-card::after{content:"";position:absolute;right:-50px;bottom:-80px;width:180px;height:180px;border-radius:50%;border:42px solid rgba(255,255,255,.035)}.college-card small{color:var(--gold);font-size:11px;letter-spacing:.15em}.college-card h3{font-family:"STZhongsong","Songti SC",serif;font-size:29px;margin:15px 0 10px}.college-card p{color:#b7cad4;font-size:13px}.college-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}.college-list span{padding:9px 10px;border-radius:11px;background:rgba(255,255,255,.06);font-size:11px}.dual-x{width:94px;height:94px;margin:auto;border-radius:50%;display:grid;place-items:center;background:var(--red);font:900 30px/1 Arial;box-shadow:0 0 0 12px rgba(157,23,53,.15),0 0 0 24px rgba(157,23,53,.07)}
+.mentor-network{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:22px}.mentor-node{min-height:122px;padding:18px 14px;border-radius:18px;background:#fff;color:var(--ink);text-align:center}.mentor-node svg{width:28px;height:28px;color:var(--red)}.mentor-node strong{display:block;margin-top:10px;font-size:13px}.mentor-node small{color:var(--muted);font-size:10px}.mentor-caption{margin-top:18px;padding:16px 20px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06);color:#bed0d9;font-size:12px}
+.flow-top{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.volunteer-diagram{padding:30px;border-radius:26px;background:#fff;border:1px solid rgba(24,33,41,.08);box-shadow:var(--shadow-sm)}.diagram-label{font-size:10px;color:var(--red);font-weight:900;letter-spacing:.14em}.diagram-title{font-family:"STZhongsong","Songti SC",serif;font-size:28px;margin:10px 0 22px}.volunteer-root{text-align:center;padding:13px;border-radius:14px;background:var(--navy);color:#fff;font-weight:800}.branch-line{height:30px;width:1px;background:var(--line);margin:auto;position:relative}.branch-line::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:68%;height:1px;background:var(--line)}.branch-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.branch-card{padding:20px;border-radius:17px;border:1px solid var(--line);background:var(--paper);position:relative}.branch-card:first-child{border-top:4px solid var(--red)}.branch-card:last-child{border-top:4px solid var(--gold)}.branch-card b{font-size:24px;color:var(--red)}.branch-card:last-child b{color:#9b741c}.branch-card strong{display:block;font-size:14px}.branch-card p{margin:8px 0 0;font-size:11px;color:var(--muted)}.diagram-note{margin-top:16px;color:var(--muted);font-size:11px}.diagram-actions{display:flex;gap:12px;margin-top:16px}
+.flow-evidence{display:grid;gap:14px}.evidence-card{padding:25px;border-radius:22px;background:var(--navy);color:#fff;min-height:178px}.evidence-card.light{background:var(--red)}.evidence-card .badge{display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:10px}.evidence-card h3{margin:14px 0 7px;font-size:19px}.evidence-card p{margin:0;color:rgba(255,255,255,.75);font-size:12px}.evidence-card a,.evidence-card button{display:inline-block;margin-top:13px;color:#fff;background:none;border:0;padding:0;font-size:12px;font-weight:800;cursor:pointer}
+.process-track{position:relative;margin-top:26px;padding:34px 22px 24px;border-radius:26px;background:#fff;border:1px solid rgba(24,33,41,.08);overflow:hidden}.process-track::before{content:"";position:absolute;left:7%;right:7%;top:72px;height:2px;background:linear-gradient(90deg,var(--red),var(--gold),var(--blue))}.process-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.process-step{text-align:center}.process-dot{width:46px;height:46px;margin:auto;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--red);color:var(--red);font-weight:900;box-shadow:0 0 0 7px #fff}.process-step:nth-child(4) .process-dot,.process-step:nth-child(5) .process-dot{border-color:var(--gold);color:#9b741c}.process-step:nth-child(6) .process-dot{background:var(--navy);border-color:var(--navy);color:#fff}.process-step strong{display:block;margin-top:18px;font-size:14px}.process-step small{display:block;margin:3px auto 0;max-width:125px;color:var(--muted);font-size:10px}.risk-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:24px}.risk-row span{font-size:10px;padding:7px 10px;border-radius:999px;background:var(--red-soft);color:var(--red)}
+.download-feature{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.bundle-card{position:relative;min-height:330px;padding:34px;border-radius:28px;background:var(--red);color:#fff;overflow:hidden;box-shadow:0 22px 55px rgba(157,23,53,.18)}.bundle-card::after{content:"ZIP";position:absolute;right:-8px;bottom:-42px;font:900 150px/1 Arial;color:rgba(255,255,255,.07)}.bundle-card small{letter-spacing:.15em;font-size:10px;color:rgba(255,255,255,.7)}.bundle-card h3{font-family:"STZhongsong","Songti SC",serif;font-size:31px;margin:14px 0 12px}.bundle-card p{max-width:560px;color:rgba(255,255,255,.76);font-size:13px}.bundle-card .btn{margin-top:20px;background:#fff;color:var(--red)}.file-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px}.file-card{position:relative;padding:24px;border-radius:22px;background:#fff;border:1px solid rgba(24,33,41,.08);min-height:156px;overflow:hidden;transition:.22s}.file-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}.file-type{font:900 11px/1 Arial;letter-spacing:.1em;color:var(--red)}.file-card h4{margin:15px 0 6px;font-size:16px;line-height:1.35}.file-card p{margin:0;color:var(--muted);font-size:11px}.file-card a{position:absolute;left:24px;bottom:19px;color:var(--red);font-size:11px;font-weight:900}.file-card::after{content:attr(data-ext);position:absolute;right:-4px;bottom:-12px;font:900 52px/1 Arial;color:rgba(157,23,53,.06)}
+.prep-guide{margin-top:20px;padding:28px;border-radius:24px;background:var(--gold-soft);display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}.prep-intro small{color:#8d671a;font-size:10px;font-weight:900;letter-spacing:.14em}.prep-intro h3{font-family:"STZhongsong","Songti SC",serif;font-size:25px;margin:10px 0}.prep-intro p{margin:0;color:#6f6654;font-size:12px}.prep-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.prep-card{padding:18px;border-radius:16px;background:rgba(255,255,255,.75)}.prep-card span{font-size:10px;color:var(--red);font-weight:900}.prep-card strong{display:block;margin:7px 0 4px;font-size:13px}.prep-card p{margin:0;color:var(--muted);font-size:10px}
+.creator{display:grid;grid-template-columns:.85fr 1.15fr;min-height:330px;border-radius:28px;overflow:hidden;background:#fff;border:1px solid rgba(24,33,41,.08);box-shadow:var(--shadow-sm)}.creator-art{position:relative;padding:36px;background:#fb7299;color:#fff;overflow:hidden}.creator-art::before,.creator-art::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.24);border-radius:50%;width:240px;height:240px;left:-50px;top:-60px}.creator-art::after{width:320px;height:320px;left:90px;top:100px}.bili-mark{position:relative;z-index:2;width:74px;height:56px;border:4px solid #fff;border-radius:12px;display:grid;place-items:center;font-weight:900}.bili-mark::before,.bili-mark::after{content:"";position:absolute;top:-12px;width:22px;height:4px;background:#fff;border-radius:99px}.bili-mark::before{left:8px;transform:rotate(26deg)}.bili-mark::after{right:8px;transform:rotate(-26deg)}.creator-art h3{position:relative;z-index:2;font-size:35px;margin:80px 0 5px}.creator-art p{position:relative;z-index:2;margin:0;opacity:.8}.creator-copy{padding:38px}.creator-copy small{color:#fb7299;font-weight:900;letter-spacing:.14em}.creator-copy h3{font-family:"STZhongsong","Songti SC",serif;font-size:29px;margin:14px 0}.creator-copy p{color:var(--muted);font-size:13px}.creator-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.creator-actions .btn-primary{background:#fb7299;box-shadow:0 12px 28px rgba(251,114,153,.2)}
+.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.course-card{padding:26px;border-radius:22px;background:#fff;border:1px solid rgba(24,33,41,.08);min-height:245px;position:relative}.course-symbol{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:var(--navy);color:#fff;font:700 24px/1 Georgia,serif}.course-card:nth-child(2) .course-symbol{background:var(--gold)}.course-card:nth-child(3) .course-symbol{background:var(--red)}.course-card h3{margin:20px 0 9px;font-size:18px}.course-card p{margin:0;color:var(--muted);font-size:12px}.course-links{position:absolute;left:26px;right:26px;bottom:22px;display:flex;gap:12px;flex-wrap:wrap}.course-links a{font-size:11px;color:var(--red);font-weight:800}
+.source-band{background:#101d27;color:#fff;padding:70px 0}.source-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}.source-intro h2{font-family:"STZhongsong","Songti SC",serif;font-size:36px;margin:0 0 12px}.source-intro p{color:#9eb3bf;font-size:13px}.source-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.source-link{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:12px;padding:17px;border-radius:15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);transition:.2s}.source-link:hover{background:rgba(255,255,255,.09)}.source-link span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--red);font-size:11px}.source-link strong{display:block;font-size:13px}.source-link small{color:#8fa7b3;font-size:10px}.source-link b{color:var(--gold)}
+.disclaimer{padding:58px 0 70px;background:#ede7df}.disclaimer-card{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:32px;border-radius:24px;background:#fff;border:1px solid rgba(24,33,41,.08);box-shadow:var(--shadow-sm)}.disclaimer-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font:800 25px/1 Georgia}.disclaimer-card h2{margin:0 0 10px;font-size:24px}.disclaimer-main{font-weight:800;color:var(--red)}.disclaimer-card p{font-size:12px;color:var(--muted)}.disclaimer-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.site-footer{background:#0c151c;color:#fff;padding:26px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand strong{display:block;font-size:13px}.footer-brand span{font-size:10px;color:#8196a1}.footer-links{display:flex;gap:20px;font-size:11px;color:#9eb0b9}
+.floating-rail{position:fixed;z-index:700;right:18px;bottom:18px;display:grid;gap:8px}.float-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid var(--line);box-shadow:0 10px 25px rgba(24,33,41,.12);font-size:12px;cursor:pointer}.float-btn.primary{background:var(--red);color:#fff;border-color:var(--red)}
+.image-modal{width:min(1120px,94vw);max-height:92vh;border:0;padding:14px;border-radius:22px;background:#fff;box-shadow:0 30px 100px rgba(0,0,0,.3)}.image-modal::backdrop{background:rgba(10,20,28,.75);backdrop-filter:blur(5px)}.image-modal img{width:100%;max-height:80vh;object-fit:contain;border-radius:14px}.image-modal p{margin:10px 6px 0;color:var(--muted);font-size:12px}.modal-close{position:absolute;right:23px;top:22px;width:40px;height:40px;border:0;border-radius:50%;background:#fff;box-shadow:0 5px 15px rgba(0,0,0,.18);cursor:pointer;font-size:22px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:1000px){
+  .main-nav{position:fixed;left:20px;right:20px;top:84px;display:none;flex-direction:column;align-items:stretch;border-radius:20px;padding:12px;box-shadow:var(--shadow)}.main-nav.open{display:flex}.main-nav a{text-align:center;padding:12px}.nav-toggle{display:block}.brand-copy{display:none}
+  .hero-layout{grid-template-columns:1fr;gap:30px}.hero{padding-top:65px}.compass{min-height:420px}.compass-card{width:min(430px,90vw)}.metrics{grid-template-columns:repeat(4,1fr)}.metric-intro{grid-column:1/-1}.metric:first-of-type{border-left:0}
+  .section-head{grid-template-columns:90px 1fr}.section-action{display:none}.notice-feature{grid-template-columns:140px 1fr}.notice-feature .btn{grid-column:2;width:max-content}.notice-list{grid-template-columns:1fr 1fr}.notice-card:last-child{grid-column:1/-1}
+  .policy-layout,.download-feature,.prep-guide,.creator,.source-layout,.flow-top{grid-template-columns:1fr}.policy-side{grid-template-columns:1fr 1fr}.dual-college{grid-template-columns:1fr}.dual-x{height:66px;width:66px}.mentor-network{grid-template-columns:repeat(3,1fr)}.file-stack{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  :root{--container:min(100% - 28px,1180px);--radius:22px}.utility-right{display:none}.utility-inner{justify-content:center;text-align:center}.header-inner{height:68px}.brand img{width:160px}.hero{min-height:auto;padding:52px 0 30px}.hero::before{font-size:220px;top:10px}.hero h1{font-size:46px}.hero-lead{font-size:15px}.hero-actions{display:grid}.btn{width:100%}.hero-foot{flex-direction:column;align-items:flex-start;gap:6px}.compass{min-height:350px}.compass-card{width:340px}.orbit-item{font-size:9px;padding:7px 9px}.compass-core strong{font-size:20px}.compass-note{display:none}.metrics{grid-template-columns:1fr 1fr;margin-top:30px}.metric{border-left:0;border-top:1px solid rgba(255,255,255,.1)}.metric:nth-child(even){border-left:1px solid rgba(255,255,255,.1)}.quick-grid{grid-template-columns:1fr}.section{padding:72px 0}.section-head{grid-template-columns:1fr;gap:10px;margin-bottom:30px}.section-index{padding:0}.section-title h2{font-size:36px}
+  .notice-feature{grid-template-columns:1fr;padding:25px}.notice-date{border-right:0;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:15px}.notice-feature .btn{grid-column:auto;width:100%}.notice-list{grid-template-columns:1fr}.notice-card:last-child{grid-column:auto}
+  .policy-layout,.policy-side,.policy-stats{grid-template-columns:1fr}.policy-hero{min-height:430px;padding:27px}.policy-hero h3{font-size:28px}.policy-hero .text-link{left:27px}.policy-mini:nth-child(3){grid-column:auto}.policy-stats{grid-template-columns:1fr 1fr}.college-list{grid-template-columns:1fr}.mentor-network{grid-template-columns:1fr 1fr}.process-track{padding:25px 20px}.process-track::before{left:42px;right:auto;top:50px;bottom:50px;width:2px;height:auto;background:linear-gradient(var(--red),var(--gold),var(--blue))}.process-grid{grid-template-columns:1fr;gap:22px}.process-step{display:grid;grid-template-columns:48px 1fr;text-align:left;align-items:center;column-gap:15px}.process-dot{grid-row:1/3;margin:0;box-shadow:0 0 0 6px #fff}.process-step strong{margin:0}.process-step small{margin:0;max-width:none}.branch-cards{grid-template-columns:1fr}.file-stack{grid-template-columns:1fr}.prep-cards,.course-grid{grid-template-columns:1fr}.creator{display:block}.creator-art{min-height:280px}.creator-copy{padding:28px}.source-list{grid-template-columns:1fr}.disclaimer-card{grid-template-columns:1fr}.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}.floating-rail{right:12px;bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.quick-card,.notice-card,.file-card{transition:none}}
+</style>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到正文</a>
-
-  <div class="notice-strip">
-    <div class="container notice-strip__inner">
-      <span class="notice-strip__badge">非官方网站</span>
-      <span>2026 级具体名额、科目、志愿规则与时间，请以西安交通大学当年正式通知为准。</span>
-      <a href="#disclaimer">查看免责声明</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+<a class="skip-link" href="#main">跳到正文</a>
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left"><span class="utility-badge">个人整理 · 非官方网站</span><span>具体安排以西安交通大学当年正式通知为准</span></div>
+    <div class="utility-right"><a href="#disclaimer">免责声明</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</div>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <img src="xjtu-logo.webp" alt="西安交通大学校标">
+      <div class="brand-copy"><strong>入校选拔指南</strong><span>Freshman Selection Guide</span></div>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="打开导航"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="#notices">通知</a><a href="#policy">班型</a><a href="#mentoring">培养</a><a href="#flow">流程</a><a href="#materials">资料</a><a href="#courses">课程</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="container hero-layout">
+    <div class="hero-copy reveal">
+      <div class="eyebrow">XJTU · Freshman Selection</div>
+      <h1>西安交通大学<br><span>入校选拔指南</span></h1>
+      <p class="hero-lead">把分散在通知、学院页面、学生资料与往年真题中的信息，整理成一条可以看懂、核对、下载和执行的路径。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">查看最新补充通知 <b>↗</b></a>
+        <a class="btn btn-dark" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">进入官方选拔系统</a>
+        <a class="btn btn-outline" href="#flow">先理解志愿流程</a>
+      </div>
+      <div class="hero-foot"><span>最后更新：2026-07-23</span><span>面向 2026 级新生持续更新</span></div>
+    </div>
+    <div class="compass reveal" aria-label="特色班型方向示意">
+      <div class="compass-card">
+        <div class="compass-grid"></div>
+        <div class="compass-core"><div><small>SELECTION</small><strong>入校选拔</strong><em>通知 · 志愿 · 考核</em></div></div>
+        <div class="orbit-item"><i></i>钱学森学院</div>
+        <div class="orbit-item"><i></i>未来技术学院</div>
+        <div class="orbit-item"><i></i>越杰计划</div>
+        <div class="orbit-item"><i></i>医学特色班</div>
+        <div class="orbit-item"><i></i>基础学科拔尖</div>
+        <div class="orbit-item"><i></i>其他专项选拔</div>
+      </div>
+      <div class="compass-note"><span>READ FIRST</span><strong>先看当年通知，再看往年经验</strong><p>班型、名额和志愿规则可能逐年调整。</p></div>
     </div>
   </div>
-
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <img src="xjtu-logo.webp" alt="西安交通大学校标" />
-        <div>
-          <strong>入校选拔指南</strong>
-          <span>通知 · 政策 · 真题 · 课程</span>
-        </div>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="打开导航">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="main-nav" class="main-nav" aria-label="主导航">
-        <a href="#notices">选拔通知</a>
-        <a href="#policy">政策班型</a>
-        <a href="#faculty">培养师资</a>
-        <a href="#flow">选拔流程</a>
-        <a href="#materials">资料下载</a>
-        <a href="#courses">网课资源</a>
-        <a href="#disclaimer">免责声明</a>
-      </nav>
+  <div class="container metrics reveal">
+    <div class="metric-intro"><small>REAL-TIME BOARD</small><strong>信息看板</strong></div>
+    <div class="metric"><span>今日浏览量</span><strong id="todayViews">—</strong><small>上海时区日期</small></div>
+    <div class="metric"><span>累计浏览量</span><strong id="totalViews">—</strong><small>匿名公共计数</small></div>
+    <div class="metric"><span>核心考核</span><strong>3＋1</strong><small>数学 / 物理 / 英语＋面试</small></div>
+    <div class="metric"><span>资料入口</span><strong>5</strong><small>真题、说明与合集</small></div>
+  </div>
+</section>
+<section class="quick-start">
+  <div class="container quick-grid">
+    <a class="quick-card reveal" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener"><small>STEP 01</small><strong>先读最新通知</strong><p>了解当届开放班型、时间节点和补充说明。</p><span class="quick-no">01</span></a>
+    <a class="quick-card reveal" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><small>STEP 02</small><strong>收藏官方系统</strong><p>报名、考场、面试和录取结果以此为主。</p><span class="quick-no">02</span></a>
+    <a class="quick-card reveal" href="#materials"><small>STEP 03</small><strong>用真题诊断基础</strong><p>先做一套，再决定数学、物理与英语的复习顺序。</p><span class="quick-no">03</span></a>
+  </div>
+</section>
+<section class="section" id="notices">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">01 / NOTICE</div><div class="section-title"><h2>选拔通知</h2><p>最新入口置顶，历年官方通知按照“校级说明—学院指南—后续培养”分层整理。</p></div><div class="section-action"><a class="text-link" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">官方通知系统</a></div></div>
+    <article class="notice-feature reveal">
+      <div class="notice-date"><small>UPDATED</small><strong>2026</strong></div>
+      <div><h3>2026 级入校选拔补充通知入口</h3><p>这是用户提供的最新补充入口。若其中内容与官方选拔系统、教务处或学院正式文件不一致，请以学校正式通知为准。</p></div>
+      <a class="btn" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">打开通知 ↗</a>
+    </article>
+    <div class="notice-list">
+      <a class="notice-card reveal" href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener"><time>2025 <span>校级说明会</span></time><h3>新生入校选拔工作说明会</h3><p>集中介绍钱学森学院、越杰计划、未来技术学院、人工智能等培养项目。</p><span class="arrow">↗</span></a>
+      <a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener"><time>2024 <span>钱学森学院</span></time><h3>各类试验班新生选拔指南</h3><p>查看钱学森班、拔尖班、人工智能班与志愿安排的官方历史示例。</p><span class="arrow">↗</span></a>
+      <a class="notice-card reveal" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" target="_blank" rel="noopener"><time>2024 <span>未来技术</span></time><h3>未来技术学院校内选拔指南</h3><p>历史方向包括储能科学与工程、智能制造工程和医工学。</p><span class="arrow">↗</span></a>
     </div>
-  </header>
-
-  <main id="main">
-    <section class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <div class="eyebrow"><span></span>面向西交新生的个人整理站</div>
-          <h1>把复杂的入校选拔，<br /><em>整理成一张清晰地图</em></h1>
-          <p class="hero-lead">集中查看官方通知、特色班型、志愿关系、笔试面试流程、往年真题与学习资源。先看规则，再做选择。</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">查看最新补充通知 <span>↗</span></a>
-            <a class="btn btn-secondary" href="https://xsjxxb.xjtu.edu.cn/" target="_blank" rel="noopener">官方通知系统</a>
-            <a class="btn btn-ghost" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">登录报名系统 ↗</a>
-          </div>
-          <div class="hero-meta">
-            <span>最后更新：2026-07-23</span>
-            <span>资料版本：2026 新生参考版</span>
-          </div>
-        </div>
-
-        <aside class="hero-panel" aria-label="网站概览">
-          <div class="hero-panel__top">
-            <span class="pulse"></span>
-            <strong>信息看板</strong>
-            <a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener" aria-label="查看网站源代码">GitHub ↗</a>
-          </div>
-          <div class="status-card">
-            <span class="status-icon">!</span>
-            <div>
-              <strong>2026 官方细则请持续关注</strong>
-              <p>本站置顶用户提供的补充通知，同时保留历年学校官网与官方选拔系统入口。</p>
-            </div>
-          </div>
-          <div class="view-grid" aria-label="浏览量">
-            <div>
-              <span>今日浏览量</span>
-              <strong id="todayViews">—</strong>
-              <small>按页面访问次数统计</small>
-            </div>
-            <div>
-              <span>累计浏览量</span>
-              <strong id="totalViews">—</strong>
-              <small>匿名公共计数服务</small>
-            </div>
-          </div>
-          <div class="quick-links">
-            <a href="#flow"><span>01</span>先看志愿逻辑</a>
-            <a href="#materials"><span>02</span>下载往年资料</a>
-            <a href="#courses"><span>03</span>开始基础预习</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="official-links" aria-label="官方入口">
-      <div class="container official-links__grid">
-        <span class="official-label">优先关注</span>
-        <a href="https://xsjxxb.xjtu.edu.cn/" target="_blank" rel="noopener"><strong>新生进校选拔系统</strong><small>通知、安排与结果</small></a>
-        <a href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><strong>报名登录入口</strong><small>开放期内填报志愿</small></a>
-        <a href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" target="_blank" rel="noopener"><strong>教务处教学通知</strong><small>校级安排与学籍政策</small></a>
-        <a href="https://qxs.xjtu.edu.cn/" target="_blank" rel="noopener"><strong>钱学森学院</strong><small>试验班指南与名单</small></a>
-        <a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener"><strong>2025 官方说明会</strong><small>最近一轮公开校级报道</small></a>
-      </div>
-    </section>
-
-    <section class="section" id="notices">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">01 / NOTICE</span>
-            <h2>选拔通知</h2>
-            <p>最新补充入口置顶，学校官网与官方选拔系统的历年通知集中归档。</p>
-          </div>
-          <a class="text-link" href="https://xsjxxb.xjtu.edu.cn/" target="_blank" rel="noopener">打开官方系统 ↗</a>
-        </div>
-
-        <article class="featured-notice">
-          <div class="featured-notice__year"><span>NEW</span><strong>2026</strong></div>
-          <div class="featured-notice__body">
-            <div class="tags"><span class="tag tag-red">最新补充</span><span class="tag">微信文章</span><span class="tag">用户提供</span></div>
-            <h3>2026 级入校选拔补充通知入口</h3>
-            <p>用于及时查看当届选拔说明。该链接不是学校官网页面；若内容与官方系统、教务处或学院正式文件存在差异，以学校正式通知为准。</p>
-          </div>
-          <a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" target="_blank" rel="noopener">打开通知 ↗</a>
-        </article>
-
-        <div class="update-alert">
-          <strong>更新状态 · 2026-07-23</strong>
-          <span>2026 级名额、科目、志愿关系和时间表需等待学校正式发布。学校新闻网、选拔系统和学院网站的更新时间可能不同，请交叉核对。</span>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <time><strong>2025</strong><span>08.27</span></time>
-            <div>
-              <div class="tags"><span class="tag tag-blue">学校官网</span><span class="tag">工作说明会</span></div>
-              <h3>西安交大 2025 年新生入校选拔工作说明会</h3>
-              <p>学校新闻网介绍钱学森学院、越杰计划、未来技术学院、人工智能等培养项目，并提示考生关注官方系统及相关学院通知。</p>
-            </div>
-            <a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener" aria-label="打开2025年官方说明会">↗</a>
-          </article>
-          <article class="timeline-item">
-            <time><strong>2024</strong><span>07.22</span></time>
-            <div>
-              <div class="tags"><span class="tag tag-blue">官方系统</span><span class="tag">政策原文</span></div>
-              <h3>2024 年钱学森学院各类试验班新生选拔指南</h3>
-              <p>系统介绍钱学森班四个交叉模块、五个基础学科拔尖班、人工智能班，以及报名资格、志愿和考试安排。</p>
-            </div>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener" aria-label="打开2024年钱学森学院官方选拔指南">↗</a>
-          </article>
-          <article class="timeline-item">
-            <time><strong>2023</strong><span>未来技术</span></time>
-            <div>
-              <div class="tags"><span class="tag tag-blue">官方系统</span><span class="tag">培养方向</span></div>
-              <h3>未来技术学院本科新生选拔指南</h3>
-              <p>历史公开方向包括储能科学与工程、智能制造工程和医工学；当届方向及名额以新通知为准。</p>
-            </div>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1191.htm" target="_blank" rel="noopener" aria-label="打开未来技术学院官方选拔指南">↗</a>
-          </article>
-          <article class="timeline-item">
-            <time><strong>2025</strong><span>珠峰计划</span></time>
-            <div>
-              <div class="tags"><span class="tag tag-gold">大一末选拔</span><span class="tag">本博贯通</span></div>
-              <h3>2025 年“珠峰计划”（综改试验班）选拔</h3>
-              <p>面向部分荣誉班学生开展后续拔尖选拔，不属于新生入校第一轮选拔，但可作为长期培养路径参考。</p>
-            </div>
-            <a href="https://news.xjtu.edu.cn/info/1219/223699.htm" target="_blank" rel="noopener" aria-label="打开珠峰计划通知">↗</a>
-          </article>
-        </div>
-
-        <details class="notice-archive">
-          <summary><span>展开更多官方通知入口</span><small>报名、面试、录取与学院动态</small></summary>
-          <div class="archive-grid">
-            <a href="https://xsjxxb.xjtu.edu.cn/" target="_blank" rel="noopener"><time>公告</time><span>新生进校选拔系统通知公告</span><b>↗</b></a>
-            <a href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><time>报名</time><span>新生入校选拔报名登录入口</span><b>↗</b></a>
-            <a href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" target="_blank" rel="noopener"><time>教务</time><span>教务处教学通知</span><b>↗</b></a>
-            <a href="https://qxs.xjtu.edu.cn/" target="_blank" rel="noopener"><time>钱院</time><span>钱学森学院官网与培养动态</span><b>↗</b></a>
-            <a href="https://wljsxy.xjtu.edu.cn/" target="_blank" rel="noopener"><time>未来</time><span>未来技术学院官网</span><b>↗</b></a>
-            <a href="https://xsjxxb.xjtu.edu.cn/jzzyxb.htm" target="_blank" rel="noopener"><time>建筑</time><span>建筑专业选拔专题页</span><b>↗</b></a>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="policy">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">02 / POLICY</span>
-            <h2>政策与特色班型</h2>
-            <p>班型名称相对稳定，但选拔名额、报考范围、考试科目和志愿关系会按年度调整。</p>
-          </div>
-        </div>
-
-        <div class="policy-snapshot" aria-label="历年政策快照">
-          <article><span>2024 钱院示例</span><strong>152</strong><small>各类试验班拟录取人数</small></article>
-          <article><span>钱学森班</span><strong>4</strong><small>历史公开交叉模块</small></article>
-          <article><span>拔尖＋人工智能</span><strong>5＋1</strong><small>五个基础学科方向与人工智能班</small></article>
-          <article><span>2025 校级说明会</span><strong>262</strong><small>当轮各试验班拟录取总数</small></article>
-        </div>
-
-        <div class="policy-grid">
-          <article class="policy-card policy-card--featured">
-            <div class="policy-number">Q01</div>
-            <div class="tags"><span class="tag tag-red">钱学森学院</span><span class="tag">荣誉教育</span></div>
-            <h3>工科试验班（钱学森班）</h3>
-            <p>强调“筑工科基础、强人文素养、建系统思维、育领军人才”。2024 指南列出智能制造、智慧能源动力、智能电气、智能技术与自动化四个交叉模块。</p>
-            <div class="mini-grid"><span>主攻专业</span><span>交叉专业</span><span>小班研讨</span><span>科研训练</span></div>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">阅读 2024 官方指南 ↗</a>
-          </article>
-          <article class="policy-card">
-            <div class="policy-number">Q02</div>
-            <div class="tags"><span class="tag tag-gold">基础学科</span></div>
-            <h3>拔尖计划 2.0 试验班</h3>
-            <p>历史公开方向为数学、物理学、计算机科学、工程力学和基础医学，突出导师制、小班化、个性化与国际化培养。</p>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看官方班型介绍 ↗</a>
-          </article>
-          <article class="policy-card">
-            <div class="policy-number">Q03</div>
-            <div class="tags"><span class="tag tag-blue">新工科</span></div>
-            <h3>人工智能班</h3>
-            <p>课程群覆盖数学与统计、计算机、人工智能核心、认知与神经科学、机器人、工具与平台等方向。</p>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看官方历年说明 ↗</a>
-          </article>
-          <article class="policy-card policy-card--future">
-            <div class="policy-number">F01</div>
-            <div class="tags"><span class="tag tag-blue">未来技术</span><span class="tag">交叉培养</span></div>
-            <h3>未来技术学院</h3>
-            <p>以项目驱动、学科交叉、产教融合和贯通培养为特色，历史公开方向包括储能科学与工程、智能制造工程、医工学。</p>
-            <div class="direction-row"><span>储能</span><span>智能制造</span><span>医工学</span></div>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1191.htm" target="_blank" rel="noopener">阅读官方历年指南 ↗</a>
-          </article>
-          <article class="policy-card">
-            <div class="policy-number">Y01</div>
-            <div class="tags"><span class="tag tag-red">越杰计划</span></div>
-            <h3>越杰班</h3>
-            <p>实行多元培养、国际交流和校内外双导师等机制。具体专业预选范围、奖学金政策、名额和选拔方式应查当年指南。</p>
-            <a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener">查看 2025 官方说明 ↗</a>
-          </article>
-          <article class="policy-card">
-            <div class="policy-number">O01</div>
-            <div class="tags"><span class="tag">其他项目</span></div>
-            <h3>医学、生命、建筑与定向项目</h3>
-            <p>学生汇总图还列出侯宗濂班、生命科学卓越计划、建筑学、医创计划、核工程定向、金禾班、储能班等；是否在当届开放入校选拔，以官方通知为准。</p>
-            <button class="link-button" type="button" data-modal-image="classes-summary-2026.webp" data-modal-alt="2026年学生整理的西安交通大学特色班汇总表">查看学生整理大表 ↗</button>
-          </article>
-        </div>
-
-        <div class="source-note">
-          <strong>2024 钱学森学院官方规则示例：</strong>
-          <span>工科试验班四个模块为一类，五个基础学科拔尖班和人工智能班为另一类；当年可在两大类中各报 1 个或只报 1 个，报两个时为非平行志愿。该规则不能直接替代 2026 年系统设置。</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faculty">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">03 / MENTORING</span>
-            <h2>培养与师资机制</h2>
-            <p>特色班的“师资”不只是一份教授名单，还包括项目主任、学业导师、科研导师、班主任、书院辅导员与校友导师组成的支持网络。</p>
-          </div>
-        </div>
-        <div class="mentor-grid">
-          <article>
-            <span class="mentor-mark">钱</span>
-            <div><div class="tags"><span class="tag tag-red">荣誉教育</span></div><h3>钱学森学院：全校资源协同</h3><p>学院集中学校优质教学、科研与国际化资源，各试验班通常由项目主任和相关专业学院教师共同参与培养，强调小班研讨、科研训练与动态考核。</p><a href="https://qxs.xjtu.edu.cn/" target="_blank" rel="noopener">查看学院与培养动态 ↗</a></div>
-          </article>
-          <article>
-            <span class="mentor-mark mentor-mark--gold">越</span>
-            <div><div class="tags"><span class="tag tag-gold">双导师</span></div><h3>越杰计划：校内导师 + 校友导师</h3><p>2025 年学校官方说明介绍了双导师、双班主任、国际交流资助与多元培养等机制。具体专业方向和资助政策以当年指南为准。</p><a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener">查看 2025 官方说明 ↗</a></div>
-          </article>
-          <article>
-            <span class="mentor-mark mentor-mark--blue">未</span>
-            <div><div class="tags"><span class="tag tag-blue">双师型队伍</span></div><h3>未来技术学院：项目驱动与产教融合</h3><p>官方历年指南强调学科交叉、产教融合“双师型”队伍、本研贯通和纵向项目课程体系，教师来源可同时覆盖校内学科与产业实践。</p><a href="https://xsjxxb.xjtu.edu.cn/info/1002/1191.htm" target="_blank" rel="noopener">阅读官方历年指南 ↗</a></div>
-          </article>
-          <article>
-            <span class="mentor-mark mentor-mark--dark">峰</span>
-            <div><div class="tags"><span class="tag">1:1 导师</span><span class="tag">本博贯通</span></div><h3>珠峰计划：导师选题牵引</h3><p>该计划面向大一末部分荣誉班学生，实行导师匹配、“一生一策”和科研课题牵引。它是后续选拔路径，并非新生入校第一轮班型。</p><a href="https://news.xjtu.edu.cn/info/1219/223699.htm" target="_blank" rel="noopener">查看 2025 选拔通知 ↗</a></div>
-          </article>
-        </div>
-        <div class="mentor-note"><strong>选班时不要只看“名师”：</strong><span>建议同时了解导师接触频率、课程强度、科研机会、动态考核、退出机制和专业归属。</span></div>
-      </div>
-    </section>
-
-    <section class="section flow-section" id="flow">
-      <div class="container">
-        <div class="section-heading section-heading--light">
-          <div>
-            <span class="section-kicker">04 / FLOW</span>
-            <h2>选拔流程与志愿关系</h2>
-            <p>把“官方历年规则”和“学生整理流程图”分开呈现，避免把历史示例误当成当届政策。</p>
-          </div>
-          <button class="text-link text-link--light link-button" type="button" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的西安交通大学新生选拔志愿填报与流程图">查看高清原图 ↗</button>
-        </div>
-
-        <div class="evidence-columns">
-          <article>
-            <span class="evidence-label evidence-label--official">官方历年规则</span>
-            <h3>钱学森学院内部志愿示例</h3>
-            <p>2024 年官方指南将钱学森班四个模块与“拔尖五班＋人工智能班”分成两类；两类各可报 1 个，若同时填报则为非平行志愿。</p>
-            <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看原文 ↗</a>
-          </article>
-          <article>
-            <span class="evidence-label">学生整理图</span>
-            <h3>A / B 志愿关系参考</h3>
-            <p>你提供的图用 A、B 志愿解释钱学森学院、越杰计划和未来技术学院的兼报关系，并注明 A 录取后自动放弃 B。此图只用于理解，提交前必须核对当年系统。</p>
-            <button class="link-button link-button--light" type="button" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的西安交通大学新生选拔志愿填报与流程图">放大查看 ↗</button>
-          </article>
-        </div>
-
-        <div class="volunteer-map">
-          <div class="map-root"><span>新生选拔</span><strong>志愿填报</strong></div>
-          <div class="volunteer-stack">
-            <article><b>A 志愿</b><strong>主要选拔志愿</strong><p>学生图按钱学森学院、越杰计划、未来技术学院等路线理解。</p></article>
-            <article><b>B 志愿</b><strong>补充志愿</strong><p>可否兼报、录取优先级和自动放弃关系，以当年系统提示为准。</p></article>
-          </div>
-          <div class="route-stack">
-            <article><span>钱</span><div><strong>钱学森学院</strong><p>钱学森班、基础学科拔尖班、人工智能班等。</p></div></article>
-            <article><span>越</span><div><strong>越杰计划</strong><p>专业预选、名额和排序方式按年度更新。</p></div></article>
-            <article><span>未</span><div><strong>未来技术学院</strong><p>历史方向包括储能、智能制造和医工学。</p></div></article>
-          </div>
-        </div>
-
-        <div class="flow-warning"><strong>提交前检查</strong><span>报名资格、A/B 志愿、平行/非平行、可填数量、笔试科目和确认截止时间，都应以当年官方系统页面为准。</span></div>
-
-        <div class="process-row" aria-label="选拔过程">
-          <div><span>01</span><strong>报名</strong><small>关注开放与截止时间</small></div><i>→</i>
-          <div><span>02</span><strong>资格审查</strong><small>核验专业与选科条件</small></div><i>→</i>
-          <div><span>03</span><strong>笔试</strong><small>按班型考数学/物理/英语等</small></div><i>→</i>
-          <div><span>04</span><strong>面试</strong><small>综合素养、志趣与表达</small></div><i>→</i>
-          <div><span>05</span><strong>确认</strong><small>按时确认录取意向</small></div><i>→</i>
-          <div class="final"><span>06</span><strong>录取</strong><small>以官方系统结果为准</small></div>
-        </div>
-        <div class="fail-list"><span>逾期未报名</span><span>资格审查未通过</span><span>笔试未达线</span><span>综合排名未入计划</span><span>逾期未确认</span></div>
-      </div>
-    </section>
-
-    <section class="section" id="materials">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">05 / DOWNLOAD</span>
-            <h2>选拔资料分享</h2>
-            <p>提供网页轻量整理包、单份试卷与备考文档。仅供个人学习交流，请勿商用或二次售卖。</p>
-          </div>
-        </div>
-
-        <div class="download-grid">
-          <article class="download-card download-card--bundle-light">
-            <div class="file-icon">ZIP</div>
-            <div class="tags"><span class="tag tag-blue">精选轻量包</span><span class="tag">约 745 KB</span></div>
-            <h3>往年数学 / 物理真题整理包</h3>
-            <p>从用户上传压缩包中整理出 2016、2017、2020、2022 年资料、入学数学测试和近年数学参考答案。提供轻量版与保留原始清晰度的完整包。</p>
-            <div class="bundle-actions">
-              <a class="btn btn-secondary" href="xjtu-selection-past-papers-lite.zip" download>下载轻量 ZIP ↓</a>
-              <a class="text-link" href="xjtu-selection-past-papers-full.zip" download>下载完整清晰版（约 10 MB）↓</a>
-            </div>
-          </article>
-          <article class="download-card">
-            <div class="file-icon file-icon--pdf">PDF</div>
-            <div class="tags"><span class="tag tag-blue">数学</span><span class="tag">2016</span></div>
-            <h3>2016 入学考试数学题</h3>
-            <p>用户单独上传的 2 页版本，含填空、证明、数学建模和算法设计等题型。</p>
-            <div class="card-actions"><a href="xjtu-2016-math-exam.pdf" target="_blank" rel="noopener">在线预览</a><a href="xjtu-2016-math-exam.pdf" download>下载 ↓</a></div>
-          </article>
-          <article class="download-card">
-            <div class="file-icon file-icon--pdf">PDF</div>
-            <div class="tags"><span class="tag tag-blue">数学</span><span class="tag">2023–24</span></div>
-            <h3>2023—2024 数学考试题</h3>
-            <p>用户单独上传的 2 页版本，满分 100 分，包含选择、填空和解答题。</p>
-            <div class="card-actions"><a href="xjtu-2023-2024-math-exam.pdf" target="_blank" rel="noopener">在线预览</a><a href="xjtu-2023-2024-math-exam.pdf" download>下载 ↓</a></div>
-          </article>
-          <article class="download-card">
-            <div class="file-icon file-icon--doc">DOCX</div>
-            <div class="tags"><span class="tag tag-gold">备考建议</span></div>
-            <h3>报考流程与备考说明</h3>
-            <p>包含常见时间节奏、数学物理英语准备与面试建议；内容为学生经验整理，不代替当年通知。</p>
-            <a class="text-link" href="xjtu-selection-prep-notes.docx" download>下载 DOCX ↓</a>
-          </article>
-        </div>
-
-        <div class="source-note">
-          <strong>资料说明</strong>
-          <span>轻量包为移动端下载做了体积优化，可能降低扫描页清晰度；完整包保留用户上传 PDF 的原始清晰度并统一了文件名。往年题仅用于熟悉题型，不代表未来考试范围、难度或命题方式。</span>
-        </div>
-
-        <div class="prep-panel">
-          <div>
-            <span class="section-kicker">材料中的时间提醒</span>
-            <h3>报名、考试与录取通常集中在军训阶段</h3>
-            <p>报到后尽快收藏官方选拔系统、教务处和钱学森学院页面，并留意军训期间的身体状态、考试通知与确认截止时间。</p>
-          </div>
-          <div class="prep-steps"><span>军训开始：宣讲与报名</span><span>军训期间：笔试与面试</span><span>军训结束前：确认与结果</span></div>
-        </div>
-
-        <div class="prep-advice-grid" aria-label="上传材料中的备考建议">
-          <article><span>数学 · 物理</span><strong>先牢固高中知识，再按强基思路训练</strong><p>上传材料将整体难度概括为“高考—强基之间”，建议优先补齐概念、公式和证明，再做综合题。</p></article>
-          <article><span>英语</span><strong>按四六级题型准备</strong><p>材料认为难度大致介于四、六级，形式与高考差异较大，可结合官方样题训练听力、阅读、翻译和写作。</p></article>
-          <article><span>面试</span><strong>准备表达框架，不押固定题型</strong><p>可准备英文自我介绍、工程素养与人文思考类问题；年份可能变化，重点是自信、清楚地表达自己的判断。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="courses">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-kicker">06 / COURSE</span>
-            <h2>网课与预习资源</h2>
-            <p>第三方课程不代表学校推荐。建议先用真题诊断薄弱点，再按数学、物理和英语模块补基础。</p>
-          </div>
-        </div>
-
-        <article class="creator-card">
-          <div class="creator-visual"><span>bilibili</span><strong>萌新小童呀</strong><small>西交学习 · 科普 · 技术分享</small></div>
-          <div class="creator-body">
-            <div class="tags"><span class="tag tag-red">本站作者</span><span class="tag">公益分享</span></div>
-            <h3>大物基础知识公益讲座</h3>
-            <p>用于从高中物理向大学物理过渡，重点建立力学、微积分表达和建模意识。为避免链接到同名错误账号，当前按钮使用 B 站账号名与课程关键词精准检索入口。</p>
-            <div class="creator-actions">
-              <a class="btn btn-primary" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" target="_blank" rel="noopener">查找公益大物课程 ↗</a>
-              <a class="btn btn-secondary" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">搜索并关注“萌新小童呀”</a>
-            </div>
-          </div>
-        </article>
-
-        <div class="course-grid">
-          <article><span class="course-icon">∫</span><div><div class="tags"><span class="tag tag-gold">数学</span></div><h3>强基 / 数学竞赛基础</h3><p>从函数、数列、不等式、组合、解析几何和证明入手；先建立完整方法框架，再做综合题。</p><div class="inline-links"><a href="https://search.bilibili.com/all?keyword=%E5%BC%BA%E5%9F%BA%E6%95%B0%E5%AD%A6%20%E7%AB%9E%E8%B5%9B%E5%9F%BA%E7%A1%80" target="_blank" rel="noopener">B 站基础课程 ↗</a><a href="https://www.icourse163.org/search.htm?search=%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B" target="_blank" rel="noopener">大学 MOOC 检索 ↗</a></div></div></article>
-          <article><span class="course-icon">Δ</span><div><div class="tags"><span class="tag tag-blue">大学物理</span></div><h3>物理与高数衔接</h3><p>建议先复习力学、电磁学和高中数学，再理解极限、导数、积分、向量在物理模型中的表达。</p><div class="inline-links"><a href="https://www.icourse163.org/search.htm?search=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86" target="_blank" rel="noopener">大学物理 MOOC ↗</a><a href="https://www.icourse163.org/search.htm?search=%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6" target="_blank" rel="noopener">高等数学 MOOC ↗</a></div></div></article>
-          <article><span class="course-icon course-icon--text">CET</span><div><div class="tags"><span class="tag tag-red">英语</span></div><h3>英语四级备考</h3><p>先做一套官方样题定位听力、阅读、翻译和写作弱项，再按模块训练；上传资料中也附有英语水平考试样题。</p><div class="inline-links"><a href="https://cet.neea.edu.cn/" target="_blank" rel="noopener">CET 官方网站 ↗</a><a href="https://search.bilibili.com/all?keyword=%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%20%E7%B3%BB%E7%BB%9F%E8%AF%BE" target="_blank" rel="noopener">B 站系统课检索 ↗</a></div></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section source-section">
-      <div class="container">
-        <div class="section-heading section-heading--light">
-          <div>
-            <span class="section-kicker">07 / SOURCE</span>
-            <h2>主要来源与更新原则</h2>
-            <p>优先引用学校官网、官方选拔系统和相关学院页面；学生资料只作为经验与导航。</p>
-          </div>
-        </div>
-        <div class="source-grid">
-          <a href="https://xsjxxb.xjtu.edu.cn/" target="_blank" rel="noopener"><span>01</span><div><strong>新生进校选拔系统</strong><small>通知、报名、笔试、面试和录取</small></div><b>↗</b></a>
-          <a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener"><span>02</span><div><strong>2025 入校选拔说明会</strong><small>学校新闻网最新公开校级报道</small></div><b>↗</b></a>
-          <a href="https://xsjxxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener"><span>03</span><div><strong>2024 钱学森学院指南</strong><small>班型、模块、资格和志愿安排</small></div><b>↗</b></a>
-          <a href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener"><span>04</span><div><strong>西交视觉形象识别系统</strong><small>校徽、标准字与色彩资源</small></div><b>↗</b></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section disclaimer-section" id="disclaimer">
-      <div class="container disclaimer-card">
-        <div class="disclaimer-icon">i</div>
-        <div>
-          <span class="section-kicker">DISCLAIMER</span>
-          <h2>免责声明</h2>
-          <p class="disclaimer-main">本网站为西安交通大学自动化钱2401班学生童瀚文个人整理，仅供交流学习使用，请勿用做商业用途。</p>
-          <p>本网站不是西安交通大学官方网站，不代表学校、学院或书院立场。招生、选拔、培养和学籍政策请以西安交通大学官方通知及报名系统为准。往年真题、白皮书和备考资料的版权归原作者或相关单位所有；如有侵权或内容需要更正，请通过 GitHub 仓库反馈。</p>
-          <p class="privacy-note"><strong>浏览量说明：</strong>今日与累计访问量由第三方公共计数接口处理，接口可能产生必要的技术访问日志；计数服务不可用时仅显示“暂不可用”，不影响网站其他内容。页面中的西交校标资源用于指明信息主题，不表示学校对本站背书。</p>
-          <div class="disclaimer-actions">
-            <a class="btn btn-primary" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">欢迎关注本人 B 站：萌新小童呀 ↗</a>
-            <a class="btn btn-secondary" href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io/issues" target="_blank" rel="noopener">反馈错误或更新线索</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div><strong>西安交通大学入校选拔指南</strong><span>童瀚文个人整理 · 非官方网站</span></div>
-      <div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener">GitHub</a></div>
+    <div class="notice-source reveal"><strong>优先级建议</strong><span>新生进校选拔系统 → 教务处通知 → 相关学院官网 → 学生经验与往年资料。</span></div>
+  </div>
+</section>
+<section class="section alt" id="policy">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">02 / POLICY</div><div class="section-title"><h2>政策与特色班型</h2><p>用三个视角理解班型：培养目标、专业方向、选拔规则。具体名额和考试科目仍应回到当年官方页面核对。</p></div><div class="section-action"><button class="text-link" data-modal-image="classes-summary-2026.webp" data-modal-alt="学生整理的西安交通大学特色班汇总表">查看汇总大表</button></div></div>
+    <div class="policy-tabs reveal" role="tablist" aria-label="特色班型分类">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="qian">钱学森学院</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="future">未来技术与越杰</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="other">医学、生命与其他项目</button>
     </div>
-  </footer>
+    <div class="tab-panel" id="tab-qian">
+      <div class="policy-layout">
+        <article class="policy-hero reveal"><div class="policy-code">Q</div><small>HONORS EDUCATION</small><h3>工科试验班（钱学森班）</h3><p>强调工科基础、人文素养、系统思维与领军能力。2024 历史指南公开了智能制造、智慧能源动力、智能电气、智能技术与自动化四个交叉模块。</p><div class="pill-row"><span class="pill">四个交叉模块</span><span class="pill">小班研讨</span><span class="pill">科研训练</span><span class="pill">动态考核</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">阅读官方历史指南</a></article>
+        <div class="policy-side">
+          <article class="policy-mini reveal"><span class="num">5</span><h4>基础学科拔尖班</h4><p>历史公开方向包括数学、物理学、计算机科学、工程力学和基础医学。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看介绍 ↗</a></article>
+          <article class="policy-mini reveal"><span class="num">AI</span><h4>人工智能班</h4><p>课程群覆盖数学统计、计算机、AI 核心、认知与神经科学、机器人等。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看介绍 ↗</a></article>
+          <article class="policy-mini reveal"><span class="num">A/B</span><h4>志愿关系需要逐年核对</h4><p>2024 历史规则将钱学森班四个模块与“拔尖五班＋人工智能班”分成两类；同时填报时为非平行志愿。不可直接套用到 2026。</p><a href="#flow">查看志愿图解 ↘</a></article>
+        </div>
+      </div>
+      <div class="policy-stats reveal"><div class="policy-stat"><span>2024 钱院示例</span><strong>152</strong><small>各类试验班拟录取人数</small></div><div class="policy-stat"><span>钱学森班</span><strong>4</strong><small>历史公开交叉模块</small></div><div class="policy-stat"><span>拔尖方向</span><strong>5</strong><small>基础学科方向</small></div><div class="policy-stat"><span>人工智能</span><strong>1</strong><small>独立特色班型</small></div></div>
+    </div>
+    <div class="tab-panel" id="tab-future" hidden>
+      <div class="policy-layout">
+        <article class="policy-hero reveal"><div class="policy-code">F</div><small>FUTURE TECHNOLOGY</small><h3>未来技术学院</h3><p>以项目驱动、学科交叉、产教融合和贯通培养为特色。历史公开方向包括储能科学与工程、智能制造工程、医工学。</p><div class="pill-row"><span class="pill">储能</span><span class="pill">智能制造</span><span class="pill">医工学</span><span class="pill">双师型队伍</span></div><a class="text-link" href="https://xsxb.xjtu.edu.cn/info/1002/1286.htm" target="_blank" rel="noopener">阅读官方历史指南</a></article>
+        <div class="policy-side">
+          <article class="policy-mini reveal"><span class="num">越</span><h4>越杰计划</h4><p>强调多元培养、国际交流和校内外双导师。专业预选、奖学金、名额与排序方式按年度更新。</p><a href="https://news.xjtu.edu.cn/info/1219/224636.htm" target="_blank" rel="noopener">查看 2025 说明 ↗</a></article>
+          <article class="policy-mini reveal"><span class="num">峰</span><h4>珠峰计划</h4><p>面向大一末部分荣誉班学生开展后续拔尖选拔，不属于新生入校第一轮。</p><a href="https://news.xjtu.edu.cn/info/1219/223699.htm" target="_blank" rel="noopener">查看后续选拔 ↗</a></article>
+          <article class="policy-mini reveal"><span class="num">项目制</span><h4>先问自己是否适合</h4><p>重点了解课程强度、项目训练、专业归属、动态考核、退出机制和科研投入，而不只是班型名称。</p><a href="#mentoring">查看培养机制 ↘</a></article>
+        </div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-other" hidden>
+      <div class="policy-layout">
+        <article class="policy-hero reveal"><div class="policy-code">O</div><small>MORE PROGRAMS</small><h3>医学、生命、建筑与专项班型</h3><p>学生汇总材料还列出侯宗濂班、生命科学卓越计划、建筑学、医创计划、核工程定向、金禾班、储能班等。是否在当届开放入校选拔，以官方通知为准。</p><div class="pill-row"><span class="pill">侯宗濂班</span><span class="pill">生命科学卓越</span><span class="pill">建筑学</span><span class="pill">医创计划</span><span class="pill">核工程定向</span></div><button class="text-link" data-modal-image="classes-summary-2026.webp" data-modal-alt="学生整理的西安交通大学特色班汇总表">放大查看学生汇总表</button></article>
+        <div class="policy-side">
+          <article class="policy-mini reveal"><span class="num">医</span><h4>医学类项目</h4><p>关注报考专业范围、身体条件、培养年限和临床培养安排。</p></article>
+          <article class="policy-mini reveal"><span class="num">建</span><h4>建筑专业选拔</h4><p>可能包含单独专题页与专业能力考查，必须查看当年专门通知。</p><a href="https://xsxb.xjtu.edu.cn/jzzyxb.htm" target="_blank" rel="noopener">打开专题页 ↗</a></article>
+          <article class="policy-mini reveal"><span class="num">专项</span><h4>定向与特色计划</h4><p>专项项目的培养单位、协议、专业限制和就业去向可能差异较大，报名之前应逐条阅读。</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section dark" id="mentoring">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">03 / MENTORING</div><div class="section-title"><h2>培养与师资机制</h2><p>特色班的“师资”不是一张教授名单，而是一套由学院、书院、项目主任、课程教师和科研导师协同组成的培养网络。</p></div><div class="section-action"><a class="text-link" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" target="_blank" rel="noopener">钱学森学院官方介绍</a></div></div>
+    <div class="dual-college reveal">
+      <article class="college-card"><small>ACADEMIC COLLEGE</small><h3>学院：学术与专业培养</h3><p>承担课程体系、专业方向、科研训练与学术评价，整合校内优质教学科研资源。</p><div class="college-list"><span>项目主任</span><span>课程教师</span><span>科研导师</span><span>专业学院</span></div></article>
+      <div class="dual-x">×</div>
+      <article class="college-card"><small>RESIDENTIAL COLLEGE</small><h3>书院：成长与社区支持</h3><p>承担班级建设、学业支持、综合素养、生活指导与朋辈交流，形成贯穿大学阶段的成长共同体。</p><div class="college-list"><span>班主任</span><span>辅导员</span><span>朋辈导师</span><span>校友资源</span></div></article>
+    </div>
+    <div class="mentor-network reveal">
+      <div class="mentor-node"><div>01</div><strong>项目主任</strong><small>培养方案与方向把关</small></div>
+      <div class="mentor-node"><div>02</div><strong>学业导师</strong><small>课程选择与学习规划</small></div>
+      <div class="mentor-node"><div>03</div><strong>科研导师</strong><small>课题、实验与科研训练</small></div>
+      <div class="mentor-node"><div>04</div><strong>班主任</strong><small>班级成长与价值引领</small></div>
+      <div class="mentor-node"><div>05</div><strong>书院辅导员</strong><small>日常事务与成长支持</small></div>
+      <div class="mentor-node"><div>06</div><strong>校友 / 产业导师</strong><small>行业视角与实践连接</small></div>
+    </div>
+    <div class="mentor-caption reveal"><strong>选择建议：</strong>除了“有没有名师”，还应了解导师接触频率、课程强度、科研机会、动态考核、退出机制和专业归属。</div>
+  </div>
+</section>
+<section class="section" id="flow">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">04 / FLOW</div><div class="section-title"><h2>选拔流程与志愿关系</h2><p>把“官方历年规则”与“学生整理流程图”分开呈现。图解用于理解，最终提交仍要以当年报名系统提示为准。</p></div><div class="section-action"><button class="text-link" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">查看原始流程图</button></div></div>
+    <div class="flow-top">
+      <article class="volunteer-diagram reveal"><div class="diagram-label">VOLUNTEER MAP</div><h3 class="diagram-title">A / B 志愿怎么理解？</h3><div class="volunteer-root">新生入校选拔志愿填报</div><div class="branch-line"></div><div class="branch-cards"><div class="branch-card"><b>A</b><strong>主要选拔志愿</strong><p>学生图按钱学森学院、越杰计划、未来技术学院等路线理解。</p></div><div class="branch-card"><b>B</b><strong>补充志愿</strong><p>能否兼报、优先级和自动放弃关系，以当年系统为准。</p></div></div><p class="diagram-note">历史规则中还可能存在同一学院内部的非平行志愿。不要用一张旧图替代当年系统规则。</p><div class="diagram-actions"><button class="btn btn-light" data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">放大原图</button><a class="btn btn-outline" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener">核对官方系统</a></div></article>
+      <div class="flow-evidence">
+        <article class="evidence-card reveal"><span class="badge">官方历史规则</span><h3>钱学森学院内部志愿示例</h3><p>2024 指南将钱学森班四个模块与“拔尖五班＋人工智能班”分为两类；两类各可报 1 个，同时填报时为非平行志愿。</p><a href="https://xsxb.xjtu.edu.cn/info/1002/1281.htm" target="_blank" rel="noopener">查看原文 ↗</a></article>
+        <article class="evidence-card light reveal"><span class="badge">提交前必查</span><h3>六项信息逐项确认</h3><p>报名资格、可填数量、A/B 志愿、平行/非平行、笔试科目、确认截止时间。</p><button data-modal-image="selection-flowchart.webp" data-modal-alt="学生整理的新生选拔志愿填报与流程图">查看学生参考图 ↗</button></article>
+      </div>
+    </div>
+    <div class="process-track reveal">
+      <div class="process-grid">
+        <div class="process-step"><div class="process-dot">01</div><strong>报名</strong><small>关注开放与截止时间</small></div>
+        <div class="process-step"><div class="process-dot">02</div><strong>资格审查</strong><small>核验专业与选科条件</small></div>
+        <div class="process-step"><div class="process-dot">03</div><strong>笔试</strong><small>数学、物理、英语等</small></div>
+        <div class="process-step"><div class="process-dot">04</div><strong>面试</strong><small>志趣、表达与综合素养</small></div>
+        <div class="process-step"><div class="process-dot">05</div><strong>确认</strong><small>按时确认录取意向</small></div>
+        <div class="process-step"><div class="process-dot">06</div><strong>录取</strong><small>以官方系统结果为准</small></div>
+      </div>
+      <div class="risk-row"><span>逾期未报名</span><span>资格审查未通过</span><span>笔试未达线</span><span>综合排名未入计划</span><span>逾期未确认</span></div>
+    </div>
+  </div>
+</section>
+<section class="section alt" id="materials">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">05 / DOWNLOAD</div><div class="section-title"><h2>选拔资料分享</h2><p>保留完整原始包，也提供轻量合集、单份试卷和备考说明。资料只用于熟悉题型，不代表未来命题。</p></div></div>
+    <div class="download-feature">
+      <article class="bundle-card reveal"><small>COMPLETE ARCHIVE · ≈ 9.9 MB</small><h3>往年真题与选拔材料完整包</h3><p>保留用户上传压缩包的原始目录与文件，包括数学、物理、英语样题、白皮书及参考答案。内容未经逐题校验，仅供交流学习。</p><a class="btn" href="xjtu-selection-past-papers-full.zip" download>下载完整 ZIP ↓</a></article>
+      <div class="file-stack">
+        <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2016</span><h4>2016 入学考试数学题</h4><p>填空、证明、数学建模与算法设计。</p><a href="xjtu-2016-math-exam.pdf" target="_blank" rel="noopener">预览 / 下载 ↗</a></article>
+        <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2023–24</span><h4>2023—2024 数学考试题</h4><p>2 页、满分 100 分，含选择填空与解答。</p><a href="xjtu-2023-2024-math-exam.pdf" target="_blank" rel="noopener">预览 / 下载 ↗</a></article>
+        <article class="file-card reveal" data-ext="ZIP"><span class="file-type">LITE PACK · 745 KB</span><h4>精选轻量资料包</h4><p>适合手机快速下载与临时浏览。</p><a href="xjtu-selection-past-papers-lite.zip" download>下载轻量 ZIP ↓</a></article>
+        <article class="file-card reveal" data-ext="DOC"><span class="file-type">PREP NOTES</span><h4>报考流程与备考说明</h4><p>时间节奏、三科准备和面试建议。</p><a href="xjtu-selection-prep-notes.docx" download>下载 DOCX ↓</a></article>
+      </div>
+    </div>
+    <div class="prep-guide reveal"><div class="prep-intro"><small>PREPARATION NOTES</small><h3>军训阶段：一边训练，一边盯紧选拔节点</h3><p>学生材料建议优先收藏新生进校选拔系统、教务处与钱学森学院页面，报名、考试和录取通常集中在军训阶段。</p></div><div class="prep-cards"><div class="prep-card"><span>数学 · 物理</span><strong>高中基础＋强基思路</strong><p>先补概念和公式，再做综合题。</p></div><div class="prep-card"><span>英语</span><strong>按四六级题型准备</strong><p>训练听力、阅读、翻译和写作。</p></div><div class="prep-card"><span>面试</span><strong>准备框架，不押题</strong><p>表达清楚、自信，比背模板更重要。</p></div></div></div>
+  </div>
+</section>
+<section class="section" id="courses">
+  <div class="container">
+    <div class="section-head reveal"><div class="section-index">06 / COURSE</div><div class="section-title"><h2>网课与预习资源</h2><p>先用真题确定薄弱点，再按数学、大学物理和英语模块补基础。第三方课程不代表学校官方推荐。</p></div></div>
+    <article class="creator reveal"><div class="creator-art"><div class="bili-mark">゜-゜</div><h3>萌新小童呀</h3><p>西交学习 · 科普 · 技术分享</p></div><div class="creator-copy"><small>PUBLIC LECTURE</small><h3>大学物理基础知识公益讲座</h3><p>用于从高中物理向大学物理过渡，重点建立力学、微积分表达和建模意识。当前使用账号名与课程关键词检索入口，避免误链同名账号。</p><div class="creator-actions"><a class="btn btn-primary" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" target="_blank" rel="noopener">查找公益大物课程 ↗</a><a class="btn btn-light" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">搜索并关注 UP 主</a></div></div></article>
+    <div class="course-grid">
+      <article class="course-card reveal"><div class="course-symbol">∫</div><h3>数学竞赛 / 强基基础</h3><p>从函数、数列、不等式、组合、解析几何和证明入手，先搭方法框架再做综合题。</p><div class="course-links"><a href="https://search.bilibili.com/all?keyword=%E5%BC%BA%E5%9F%BA%E6%95%B0%E5%AD%A6%20%E7%AB%9E%E8%B5%9B%E5%9F%BA%E7%A1%80" target="_blank" rel="noopener">B 站检索 ↗</a><a href="https://www.icourse163.org/search.htm?search=%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B" target="_blank" rel="noopener">MOOC ↗</a></div></article>
+      <article class="course-card reveal"><div class="course-symbol">Δ</div><h3>大学物理与高数衔接</h3><p>复习力学、电磁学和高中数学，再理解极限、导数、积分和向量在物理模型中的表达。</p><div class="course-links"><a href="https://www.icourse163.org/search.htm?search=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86" target="_blank" rel="noopener">大学物理 MOOC ↗</a><a href="https://www.icourse163.org/search.htm?search=%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6" target="_blank" rel="noopener">高等数学 MOOC ↗</a></div></article>
+      <article class="course-card reveal"><div class="course-symbol">CET</div><h3>英语四级备考</h3><p>用官方样题定位听力、阅读、翻译和写作弱项，再按模块训练。</p><div class="course-links"><a href="https://cet.neea.edu.cn/" target="_blank" rel="noopener">CET 官网 ↗</a><a href="https://search.bilibili.com/all?keyword=%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%20%E7%B3%BB%E7%BB%9F%E8%AF%BE" target="_blank" rel="noopener">B 站系统课 ↗</a></div></article>
+    </div>
+  </div>
+</section>
+<section class="source-band">
+  <div class="container source-layout">
+    <div class="source-intro reveal"><div class="eyebrow" style="color:var(--gold)">Sources</div><h2>主要来源与更新原则</h2><p>官方页面用于确认政策；学生资料用于理解、复习和经验参考。两类信息在本站中明确区分。</p></div>
+    <div class="source-list">
+      <a class="source-link reveal" href="https://xsxb.xjtu.edu.cn/" target="_blank" rel="noopener"><span>01</span><div><strong>新生进校选拔系统</strong><small>通知、报名、笔试、面试与录取</small></div><b>↗</b></a>
+      <a class="source-link reveal" href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" target="_blank" rel="noopener"><span>02</span><div><strong>西安交大教务处</strong><small>教学通知与校级政策</small></div><b>↗</b></a>
+      <a class="source-link reveal" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" target="_blank" rel="noopener"><span>03</span><div><strong>钱学森学院官方介绍</strong><small>学院定位、培养机制与官方入口</small></div><b>↗</b></a>
+      <a class="source-link reveal" href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener"><span>04</span><div><strong>西交视觉形象系统</strong><small>校标、标准字与视觉资源</small></div><b>↗</b></a>
+    </div>
+  </div>
+</section>
+<section class="disclaimer" id="disclaimer">
+  <div class="container disclaimer-card reveal"><div class="disclaimer-icon">i</div><div><h2>免责声明</h2><p class="disclaimer-main">本网站为西安交通大学自动化钱2401班学生童瀚文个人整理，仅供交流学习使用，请勿用做商业用途。</p><p>本网站不是西安交通大学官方网站，不代表学校、学院或书院立场。招生、选拔、培养和学籍政策请以西安交通大学官方通知及报名系统为准。往年真题、白皮书和备考资料的版权归原作者或相关单位所有；如有侵权或内容需要更正，请通过 GitHub 仓库反馈。</p><p><strong>浏览量说明：</strong>今日与累计访问量由第三方公共计数接口处理；计数服务不可用时仅显示“暂不可用”，不影响其他内容。</p><div class="disclaimer-actions"><a class="btn btn-primary" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" target="_blank" rel="noopener">关注 B 站：萌新小童呀 ↗</a><a class="btn btn-light" href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io/issues" target="_blank" rel="noopener">反馈错误或更新线索</a></div></div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>西安交通大学入校选拔指南</strong><span>童瀚文个人整理 · 非官方网站 · 2026</span></div><div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" target="_blank" rel="noopener">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" target="_blank" rel="noopener">GitHub</a></div></div></footer>
+<div class="floating-rail"><a class="float-btn primary" href="#top" aria-label="返回顶部">↑</a></div>
+<dialog class="image-modal" id="imageModal"><button class="modal-close" type="button" aria-label="关闭">×</button><img src="" alt=""><p></p></dialog>
+<script>
+(() => {
+  const navToggle=document.querySelector('.nav-toggle'); const nav=document.getElementById('mainNav');
+  navToggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');navToggle.setAttribute('aria-expanded',String(open))});
+  nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');navToggle?.setAttribute('aria-expanded','false')}));
 
-  <dialog class="image-modal" id="imageModal">
-    <button type="button" class="modal-close" aria-label="关闭">×</button>
-    <img src="" alt="" />
-    <p></p>
-  </dialog>
+  const progress=document.getElementById('scrollProgress');
+  const updateProgress=()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'};
+  addEventListener('scroll',updateProgress,{passive:true}); updateProgress();
 
-  <script src="app.js" defer></script>
+  const sections=[...document.querySelectorAll('section[id]')]; const links=[...document.querySelectorAll('.main-nav a')];
+  const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-35% 0px -55%'}); sections.forEach(s=>spy.observe(s));
+
+  const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+  const tabs=document.querySelectorAll('.tab-btn'); const panels=document.querySelectorAll('.tab-panel');
+  tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});panels.forEach(p=>p.hidden=true);btn.classList.add('active');btn.setAttribute('aria-selected','true');const panel=document.getElementById('tab-'+btn.dataset.tab);panel.hidden=false;panel.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}));
+
+  const modal=document.getElementById('imageModal'); const modalImg=modal?.querySelector('img'); const modalCaption=modal?.querySelector('p');
+  document.querySelectorAll('[data-modal-image]').forEach(el=>el.addEventListener('click',()=>{if(!modal||!modalImg)return;modalImg.src=el.dataset.modalImage;modalImg.alt=el.dataset.modalAlt||'参考图片';modalCaption.textContent=el.dataset.modalAlt||'';modal.showModal()}));
+  modal?.querySelector('.modal-close')?.addEventListener('click',()=>modal.close());
+  modal?.addEventListener('click',e=>{if(e.target===modal)modal.close()});
+
+  const namespace='xjtuselectionhanwentong2026'; const todayEl=document.getElementById('todayViews'); const totalEl=document.getElementById('totalViews');
+  const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replaceAll('-','');
+  const getCount=d=>[d?.count,d?.Count,d?.value,d?.Value,d?.data?.count,d?.data?.value].map(Number).find(Number.isFinite);
+  const up=async key=>{const r=await fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`,{cache:'no-store'});if(!r.ok)throw new Error(r.status);return getCount(await r.json())};
+  Promise.all([up('day'+date),up('total')]).then(([d,t])=>{todayEl.textContent=d?.toLocaleString('zh-CN')??'—';totalEl.textContent=t?.toLocaleString('zh-CN')??'—'}).catch(()=>{todayEl.textContent='暂不可用';totalEl.textContent='暂不可用';todayEl.style.fontSize=totalEl.style.fontSize='14px'});
+})();
+</script>
 </body>
 </html>
