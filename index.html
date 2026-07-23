@@ -106,20 +106,24 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 /* v4 release: transparent official wordmark, de-duplicated library, version history */
 .version-section{padding:74px 0;background:linear-gradient(135deg,#101f2a 0%,var(--navy) 55%,#152f40 100%);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
 .version-card{display:grid;grid-template-columns:280px 1fr;gap:44px;align-items:stretch;padding:34px;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:rgba(255,255,255,.055);box-shadow:0 22px 60px rgba(0,0,0,.16)}
-.version-stamp{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:230px;padding:30px;border-radius:22px;background:var(--red);overflow:hidden}.version-stamp::after{content:"V5";position:absolute;right:-18px;bottom:-28px;font:900 132px/1 Arial;color:rgba(255,255,255,.08)}.version-stamp small{position:relative;z-index:1;font-size:10px;font-weight:900;letter-spacing:.18em;color:rgba(255,255,255,.72)}.version-stamp strong{position:relative;z-index:1;display:block;margin:12px 0 5px;font:900 48px/1 Arial;letter-spacing:-.04em}.version-stamp span{position:relative;z-index:1;font-size:12px;color:rgba(255,255,255,.75)}
+.version-stamp{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:230px;padding:30px;border-radius:22px;background:var(--red);overflow:hidden}.version-stamp::after{content:"V6";position:absolute;right:-18px;bottom:-28px;font:900 132px/1 Arial;color:rgba(255,255,255,.08)}.version-stamp small{position:relative;z-index:1;font-size:10px;font-weight:900;letter-spacing:.18em;color:rgba(255,255,255,.72)}.version-stamp strong{position:relative;z-index:1;display:block;margin:12px 0 5px;font:900 48px/1 Arial;letter-spacing:-.04em}.version-stamp span{position:relative;z-index:1;font-size:12px;color:rgba(255,255,255,.75)}
 .version-copy .eyebrow{color:var(--gold)}.version-copy .eyebrow::before{background:var(--gold)}.version-copy h2{margin:18px 0 8px;font-family:"STZhongsong","Songti SC",serif;font-size:38px}.version-copy>p{margin:0 0 20px;color:#aec1cb;font-size:13px}.changelog-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:0;padding:0;list-style:none}.changelog-list li{position:relative;padding:13px 14px 13px 36px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.045);color:#d8e2e7;font-size:12px}.changelog-list li::before{content:"✓";position:absolute;left:13px;top:12px;color:var(--gold);font-weight:900}.version-note{margin-top:18px!important;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);color:#91a8b4!important;font-size:11px!important}
 .version-pill{display:inline-flex;align-items:center;gap:7px;padding:4px 9px;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#fff;font-size:9px;font-weight:900;letter-spacing:.08em}.version-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
 @media(max-width:800px){.version-card{grid-template-columns:1fr;gap:22px;padding:22px}.version-stamp{min-height:180px}.changelog-list{grid-template-columns:1fr}.version-copy h2{font-size:32px}}
 
-.material-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
-.material-group{background:#fff;border:1px solid rgba(24,33,41,.1);border-radius:22px;padding:24px;box-shadow:0 12px 30px rgba(20,30,40,.06)}
-.material-group h3{margin:0 0 8px;color:var(--red);font-size:22px}
-.material-group p{color:var(--muted);font-size:14px}
-.material-group ul{padding-left:18px;color:#46515a}
-.material-group a{color:var(--red);font-weight:800}
-.bundle-card{min-height:420px;position:relative;overflow:hidden}
-.bundle-card::after{content:"📚";position:absolute;right:80px;bottom:-40px;font-size:260px;opacity:.08;line-height:1}
-@media(max-width:800px){.material-groups{grid-template-columns:1fr}}
+/* V6 resource center */
+.v6-resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 36px}
+.v6-resource-card{background:#fff;border:1px solid rgba(24,33,41,.1);border-radius:24px;padding:28px;box-shadow:0 12px 32px rgba(0,0,0,.06);min-height:220px}
+.v6-resource-card .v6-icon{font-size:34px;margin-bottom:12px}
+.v6-resource-card h3{margin:0 0 12px;color:var(--red);font-size:22px}
+.v6-resource-card p{color:var(--muted);font-size:14px}
+.v6-resource-card ul{padding-left:20px;color:#4e5963;font-size:14px;line-height:2}
+.v6-archive{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:42px;border-radius:28px;background:var(--red);color:#fff;margin-bottom:35px;overflow:hidden;position:relative}
+.v6-archive:after{content:'ARCHIVE';position:absolute;right:-20px;bottom:-40px;font:900 130px Arial;color:rgba(255,255,255,.07)}
+.v6-archive h3{font-size:32px;margin:12px 0}
+.v6-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:1}
+.v6-point{padding:16px;background:rgba(255,255,255,.12);border-radius:16px}
+@media(max-width:800px){.v6-resource-grid,.v6-archive{grid-template-columns:1fr}.v6-archive{padding:28px}}
 </style>
 </head>
 <body>
@@ -152,7 +156,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 <h1>西安交通大学<br/><span>入校选拔指南</span></h1>
 <p class="hero-lead">把分散在通知、学院页面、经验整理与往年真题中的信息，整理成一条可以看懂、核对、下载和执行的路径。</p>
 <div class="hero-actions"><a class="btn btn-primary" href="https://mp.weixin.qq.com/s/iMGeFnrc_L2nPikqpQH9ig?scene=1" rel="noopener" target="_blank">查看最新补充通知 <b>↗</b></a><a class="btn btn-dark" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank">进入官方选拔系统</a><a class="btn btn-bili" href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9" rel="noopener" target="_blank">先看公益大物课 <b>▶</b></a></div>
-<div class="hero-foot"><span>最后更新：2026-07-23</span><span>当前版本：V5.0.0</span><span>面向 2026 级新生持续更新</span></div>
+<div class="hero-foot"><span>最后更新：2026-07-23</span><span>当前版本：V6.0.0</span><span>面向 2026 级新生持续更新</span></div>
 </div>
 <div aria-label="特色班型方向示意" class="compass reveal">
 <div class="compass-card">
@@ -326,77 +330,22 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 <div class="container">
 <div class="section-head reveal">
 <div class="section-index">06 / DOWNLOAD</div>
-<div class="section-title"><h2>选拔资料分享</h2><p>按照数学、物理、英语三个方向整理历年试题、参考答案与备考资源。重复版本已合并，仅保留清晰、完整或具有独立参考价值的资料。</p></div>
-<div class="section-action"><a class="text-link" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整整理包</a></div>
+<div class="section-title"><h2>选拔资料中心</h2><p>按照考试科目重新整理数学、物理、英语三类资源，并保留历年真题、参考答案与备考说明。重复版本已清理，仅保留具有参考价值的文件。</p></div>
+<div class="section-action"><a class="text-link" download href="xjtu-selection-materials-complete-2026.zip">完整资料包</a></div>
 </div>
-
-<div class="material-groups reveal">
-<article class="material-group">
-<h3>📐 数学资料</h3>
-<p>历年入学测试、参考答案与备考说明。</p>
-<ul>
-<li>2016 / 2017 / 2019 / 2020 入学数学测试</li>
-<li>2023—2024 数学考试题</li>
-<li>近年数学参考答案</li>
-</ul>
-</article>
-<article class="material-group">
-<h3>⚙️ 物理资料</h3>
-<p>面向工科特色班选拔的物理复习资源。</p>
-<ul>
-<li>2022 数学、物理真题及答案</li>
-<li>大学物理基础复习建议</li>
-<li>历年综合题型参考</li>
-</ul>
-</article>
-<article class="material-group">
-<h3>🇬🇧 英语资料</h3>
-<p>包含校内英语水平考试与四六级备考入口。</p>
-<ul>
-<li><a href="xjtu-english-placement-sample.pdf" target="_blank">西交大学英语水平考试样题</a></li>
-<li><a href="https://www.wehuster.com/cet4" target="_blank">CET-4 历年真题与解析入口</a></li>
-<li><a href="https://pastpapers.cn/cet-4" target="_blank">CET-4 在线真题练习</a></li>
-</ul>
-</article>
+<div class="v6-resource-grid">
+<div class="v6-resource-card"><div class="v6-icon">📐</div><h3>数学资料</h3><p>历年入学数学测试与参考答案。</p><ul><li>2016 入学数学测试</li><li>2017 入学数学测试</li><li>2019 / 2020 数学试题</li><li>2023—2024 最新试题</li></ul></div>
+<div class="v6-resource-card"><div class="v6-icon">⚙️</div><h3>物理资料</h3><p>面向工科基础能力准备。</p><ul><li>2022 数学、物理真题及答案</li><li>大学物理复习资源</li><li>基础知识梳理</li></ul></div>
+<div class="v6-resource-card"><div class="v6-icon">🇬🇧</div><h3>英语资料</h3><p>英语水平考试与四六级备考入口。</p><ul><li>西交大学英语水平考试样题</li><li>CET-4 历年真题入口</li><li>听力与解析资源</li></ul></div>
 </div>
-<div class="download-feature">
-<article class="bundle-card reveal"><small>COMPLETE ARCHIVE · V5</small><h3>往年真题与选拔资料完整整理包</h3><p>覆盖 2016、2017、2019、2020、2022 与 2023—2024 数学/物理资料、大学英语水平考试样题、参考答案、白皮书、备考说明和 2016 原始实拍。同内容重复副本已删除。</p><a class="btn" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整 ZIP ↓</a></article>
+<div class="v6-archive">
+<div><small>COMPLETE ARCHIVE · V6</small><h3>往年真题与选拔资料完整整理包</h3><p>覆盖数学、物理、英语资料、白皮书、备考说明与原始试卷扫描。适合一次性下载保存。</p><a class="btn" download href="xjtu-selection-materials-complete-2026.zip">下载完整 ZIP ↓</a></div>
+<div class="v6-points"><div class="v6-point">📐 数学<br>历年真题</div><div class="v6-point">⚙️ 物理<br>基础资料</div><div class="v6-point">🇬🇧 英语<br>样题与四级入口</div><div class="v6-point">📄 白皮书<br>经验整理</div></div>
+</div>
 <div class="file-stack">
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2016</span><h4>2016 数学试题及题解</h4><p>8 页更新版，包含原题和手写题解。</p><a href="xjtu-2016-math-with-solutions.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2017</span><h4>2017 入学考试数学题</h4><p>选择、填空与综合解答题。</p><a href="xjtu-2017-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card file-card-new reveal" data-ext="NEW"><span class="file-type">MATH · 2019</span><h4>2019 入学数学测试</h4><p>保留一份电子排版清晰版，重复副本未收录。</p><a href="xjtu-2019-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card file-card-new reveal" data-ext="NEW"><span class="file-type">MATH · 2020</span><h4>2020 入学考试数学题</h4><p>4 页扫描版；多个同内容文件仅保留一份。</p><a href="xjtu-2020-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH + PHYSICS · 2022</span><h4>2022 数学、物理真题及答案</h4><p>综合练习与参考答案。</p><a href="xjtu-2022-math-physics-with-answers.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2023–24</span><h4>2023—2024 数学考试题</h4><p>2 页、满分 100 分，含选择填空与解答。</p><a href="xjtu-2023-2024-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card file-card-new reveal" data-ext="NEW"><span class="file-type">ENGLISH · SAMPLE</span><h4>大学英语水平考试样题</h4><p>含听力、阅读、写作、翻译、听力文本与参考答案。</p><a href="xjtu-english-placement-sample.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">REFERENCE ANSWERS</span><h4>近年数学考试参考答案</h4><p>用于核对思路，内容未经逐题复核。</p><a href="xjtu-recent-math-reference-answers.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="PDF"><span class="file-type">WHITEPAPER · 2023</span><h4>新生入学选拔白皮书</h4><p>历史经验与班型选择参考，不代替当年政策。</p><a href="xjtu-2023-selection-whitepaper.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card file-card-new reveal" data-ext="SCAN"><span class="file-type">ORIGINAL · 4 PAGES</span><h4>2016 数学原始实拍合并版</h4><p>四张试卷照片合并为 PDF，便于连续阅读。</p><a href="xjtu-2016-math-original-scan.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
-<article class="file-card reveal" data-ext="ZIP"><span class="file-type">LITE PACK · 2053 KB</span><h4>精选轻量资料包</h4><p>适合手机快速下载；已加入 2019、2023—24 和英语样题。</p><a download="" href="xjtu-selection-past-papers-lite.zip">下载轻量 ZIP ↓</a></article>
-<article class="file-card reveal" data-ext="DOC"><span class="file-type">PREP NOTES</span><h4>报考流程与备考说明</h4><p>时间节奏、三科准备和面试建议。</p><a download="" href="xjtu-selection-prep-notes.docx">下载 DOCX ↓</a></article>
-</div>
-</div>
-<section aria-labelledby="scanTitle" class="scan-showcase reveal">
-<div class="scan-showcase-head"><div><small>NEW MATERIAL · 2016 ORIGINAL</small><h3 id="scanTitle">2016 数学试卷原始实拍</h3><p>点击任意缩略图即可放大查看。四页依次覆盖填空题、证明题、数学建模与算法设计等内容。</p></div><div class="scan-actions"><a class="btn btn-dark" href="xjtu-2016-math-original-scan.pdf" rel="noopener" target="_blank">打开合并 PDF ↗</a><a class="btn btn-light" download="" href="xjtu-2016-math-original-photos.zip">下载原图 ZIP ↓</a></div></div>
-<div class="scan-grid">
-<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 1 页" data-modal-image="xjtu-2016-math-original-01.png" type="button"><img alt="2016 数学试卷原始实拍第 1 页" src="xjtu-2016-math-original-01.webp"/><span><b>01</b> 填空题 1—9</span></button>
-<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 2 页" data-modal-image="xjtu-2016-math-original-02.png" type="button"><img alt="2016 数学试卷原始实拍第 2 页" src="xjtu-2016-math-original-02.webp"/><span><b>02</b> 填空题 10—14 · 证明</span></button>
-<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 3 页" data-modal-image="xjtu-2016-math-original-03.png" type="button"><img alt="2016 数学试卷原始实拍第 3 页" src="xjtu-2016-math-original-03.webp"/><span><b>03</b> 七盏灯建模 · π 算法</span></button>
-<button class="scan-card" data-modal-alt="2016 数学试卷原始实拍 · 第 4 页" data-modal-image="xjtu-2016-math-original-04.png" type="button"><img alt="2016 数学试卷原始实拍第 4 页" src="xjtu-2016-math-original-04.webp"/><span><b>04</b> 函数不等式证明</span></button>
-</div>
-</section>
-<div class="prep-guide reveal"><div class="prep-intro"><small>PREPARATION NOTES</small><h3>军训阶段：一边训练，一边盯紧选拔节点</h3><p>建议优先收藏新生进校选拔系统、教务处与钱学森学院页面，报名、考试和录取通常集中在军训阶段。</p></div><div class="prep-cards"><div class="prep-card"><span>数学 · 物理</span><strong>高中基础＋强基思路</strong><p>先补概念和公式，再做综合题。</p></div><div class="prep-card"><span>英语</span><strong>按四六级题型准备</strong><p>训练听力、阅读、翻译和写作。</p></div><div class="prep-card"><span>面试</span><strong>准备框架，不押题</strong><p>表达清楚、自信，比背模板更重要。</p></div></div></div>
-</div>
-</section>
-
-<section class="source-band">
-<div class="container source-layout">
-<div class="source-intro reveal"><div class="eyebrow" style="color:var(--gold)">Sources</div><h2>主要来源与更新原则</h2><p>官方页面用于确认政策；经验资料用于理解、复习和辅助判断。两类信息在本站中明确区分。</p></div>
-<div class="source-list">
-<a class="source-link reveal" href="https://xsxb.xjtu.edu.cn/" rel="noopener" target="_blank"><span>01</span><div><strong>新生进校选拔系统</strong><small>通知、报名、笔试、面试与录取</small></div><b>↗</b></a>
-<a class="source-link reveal" href="https://dean.xjtu.edu.cn/jxxx/jxtz.htm" rel="noopener" target="_blank"><span>02</span><div><strong>西安交大教务处</strong><small>教学通知与校级政策</small></div><b>↗</b></a>
-<a class="source-link reveal" href="https://www.xjtu.edu.cn/info/1056/1084568.htm" rel="noopener" target="_blank"><span>03</span><div><strong>钱学森学院官方介绍</strong><small>学院定位、培养机制与官方入口</small></div><b>↗</b></a>
-<a class="source-link reveal" href="https://vi.xjtu.edu.cn/" rel="noopener" target="_blank"><span>04</span><div><strong>西交视觉形象系统</strong><small>校标、标准字与视觉资源</small></div><b>↗</b></a>
+<article class="file-card"><span class="file-type">MATH · 2016</span><h4>2016 数学试题及题解</h4><p>原题与题解。</p><a href="xjtu-2016-math-with-solutions.pdf" target="_blank">预览 / 下载 ↗</a></article>
+<article class="file-card"><span class="file-type">MATH · 2023–24</span><h4>2023—2024 数学考试题</h4><p>最新年份参考。</p><a href="xjtu-2023-2024-math-exam.pdf" target="_blank">预览 / 下载 ↗</a></article>
+<article class="file-card"><span class="file-type">ENGLISH</span><h4>大学英语水平考试样题</h4><p>听力、阅读、写作、翻译。</p><a href="xjtu-english-placement-sample.pdf" target="_blank">预览 / 下载 ↗</a></article>
 </div>
 </div>
 </section>
@@ -406,7 +355,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 <section class="version-section" id="changelog">
 <div class="container">
 <div class="version-card reveal">
-<div class="version-stamp"><small>CURRENT RELEASE</small><strong>V5.0.0</strong><span>2026-07-23</span></div>
+<div class="version-stamp"><small>CURRENT RELEASE</small><strong>V6.0.0</strong><span>2026-07-23</span></div>
 <div class="version-copy"><div class="eyebrow">Changelog</div><h2>更新日志</h2><p>第五版继续沿用第四版的视觉体系，重点修正校徽与标准字组合的显示比例，并保持资料结构与页面风格稳定。</p>
 <ul class="changelog-list">
 <li>首页校徽替换为透明版，并继续链接西安交通大学官网。</li>
@@ -417,12 +366,12 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 <li>页面底部新增版本号与本次更新记录。</li>
 <li>网站头部校徽更换为带标准字组合的透明版，并重新调整显示比例。</li>
 </ul>
-<p class="version-note">版本命名：V5.0.0。具体招生、选拔、培养和学籍政策仍以西安交通大学当年正式通知为准。</p></div>
+<p class="version-note">版本命名：V6.0.0。具体招生、选拔、培养和学籍政策仍以西安交通大学当年正式通知为准。</p></div>
 </div>
 </div>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>西安交通大学入校选拔指南</strong><span>自动化钱2401童同学个人整理 · 非官方网站 · V5.0.0</span></div><div class="footer-links"><span class="version-pill">V5.0.0</span><a href="#changelog">更新日志</a><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" rel="noopener" target="_blank">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" rel="noopener" target="_blank">GitHub</a></div></div></footer>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>西安交通大学入校选拔指南</strong><span>自动化钱2401童同学个人整理 · 非官方网站 · V6.0.0</span></div><div class="footer-links"><span class="version-pill">V6.0.0</span><a href="#changelog">更新日志</a><a href="#top">返回顶部 ↑</a><a href="https://vi.xjtu.edu.cn/" rel="noopener" target="_blank">视觉资源来源</a><a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io" rel="noopener" target="_blank">GitHub</a></div></div></footer>
 <div class="floating-rail"><a aria-label="在 B 站搜索并关注萌新小童呀" class="float-btn bili" href="https://search.bilibili.com/upuser?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80" rel="noopener" target="_blank" title="B站：萌新小童呀">B</a><a aria-label="返回顶部" class="float-btn primary" href="#top">↑</a></div>
 <dialog class="image-modal" id="imageModal"><button aria-label="关闭" class="modal-close" type="button">×</button><img alt="" src=""/><p></p></dialog>
 <script>
