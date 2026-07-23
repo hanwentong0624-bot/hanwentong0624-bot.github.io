@@ -110,6 +110,16 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 .version-copy .eyebrow{color:var(--gold)}.version-copy .eyebrow::before{background:var(--gold)}.version-copy h2{margin:18px 0 8px;font-family:"STZhongsong","Songti SC",serif;font-size:38px}.version-copy>p{margin:0 0 20px;color:#aec1cb;font-size:13px}.changelog-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:0;padding:0;list-style:none}.changelog-list li{position:relative;padding:13px 14px 13px 36px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.045);color:#d8e2e7;font-size:12px}.changelog-list li::before{content:"✓";position:absolute;left:13px;top:12px;color:var(--gold);font-weight:900}.version-note{margin-top:18px!important;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);color:#91a8b4!important;font-size:11px!important}
 .version-pill{display:inline-flex;align-items:center;gap:7px;padding:4px 9px;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#fff;font-size:9px;font-weight:900;letter-spacing:.08em}.version-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
 @media(max-width:800px){.version-card{grid-template-columns:1fr;gap:22px;padding:22px}.version-stamp{min-height:180px}.changelog-list{grid-template-columns:1fr}.version-copy h2{font-size:32px}}
+
+.material-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+.material-group{background:#fff;border:1px solid rgba(24,33,41,.1);border-radius:22px;padding:24px;box-shadow:0 12px 30px rgba(20,30,40,.06)}
+.material-group h3{margin:0 0 8px;color:var(--red);font-size:22px}
+.material-group p{color:var(--muted);font-size:14px}
+.material-group ul{padding-left:18px;color:#46515a}
+.material-group a{color:var(--red);font-weight:800}
+.bundle-card{min-height:420px;position:relative;overflow:hidden}
+.bundle-card::after{content:"📚";position:absolute;right:80px;bottom:-40px;font-size:260px;opacity:.08;line-height:1}
+@media(max-width:800px){.material-groups{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -316,11 +326,41 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{max-w
 <div class="container">
 <div class="section-head reveal">
 <div class="section-index">06 / DOWNLOAD</div>
-<div class="section-title"><h2>选拔资料分享</h2><p>按年份与科目整理数学、物理、英语和备考说明；同内容的重复版本已合并，只保留清晰、完整或具有独立参考价值的版本。资料只用于熟悉题型，不代表未来命题。</p></div>
+<div class="section-title"><h2>选拔资料分享</h2><p>按照数学、物理、英语三个方向整理历年试题、参考答案与备考资源。重复版本已合并，仅保留清晰、完整或具有独立参考价值的资料。</p></div>
 <div class="section-action"><a class="text-link" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整整理包</a></div>
 </div>
+
+<div class="material-groups reveal">
+<article class="material-group">
+<h3>📐 数学资料</h3>
+<p>历年入学测试、参考答案与备考说明。</p>
+<ul>
+<li>2016 / 2017 / 2019 / 2020 入学数学测试</li>
+<li>2023—2024 数学考试题</li>
+<li>近年数学参考答案</li>
+</ul>
+</article>
+<article class="material-group">
+<h3>⚙️ 物理资料</h3>
+<p>面向工科特色班选拔的物理复习资源。</p>
+<ul>
+<li>2022 数学、物理真题及答案</li>
+<li>大学物理基础复习建议</li>
+<li>历年综合题型参考</li>
+</ul>
+</article>
+<article class="material-group">
+<h3>🇬🇧 英语资料</h3>
+<p>包含校内英语水平考试与四六级备考入口。</p>
+<ul>
+<li><a href="xjtu-english-placement-sample.pdf" target="_blank">西交大学英语水平考试样题</a></li>
+<li><a href="https://www.wehuster.com/cet4" target="_blank">CET-4 历年真题与解析入口</a></li>
+<li><a href="https://pastpapers.cn/cet-4" target="_blank">CET-4 在线真题练习</a></li>
+</ul>
+</article>
+</div>
 <div class="download-feature">
-<article class="bundle-card reveal"><small>COMPLETE ARCHIVE · ≈ 12.1 MiB · V4</small><h3>往年真题与选拔资料完整整理包</h3><p>覆盖 2016、2017、2019、2020、2022 与 2023—2024 数学/物理资料、大学英语水平考试样题、参考答案、白皮书、备考说明和 2016 原始实拍。同内容重复副本已删除。</p><a class="btn" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整 ZIP ↓</a></article>
+<article class="bundle-card reveal"><small>COMPLETE ARCHIVE · V5</small><h3>往年真题与选拔资料完整整理包</h3><p>覆盖 2016、2017、2019、2020、2022 与 2023—2024 数学/物理资料、大学英语水平考试样题、参考答案、白皮书、备考说明和 2016 原始实拍。同内容重复副本已删除。</p><a class="btn" download="" href="xjtu-selection-materials-complete-2026.zip">下载完整 ZIP ↓</a></article>
 <div class="file-stack">
 <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2016</span><h4>2016 数学试题及题解</h4><p>8 页更新版，包含原题和手写题解。</p><a href="xjtu-2016-math-with-solutions.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
 <article class="file-card reveal" data-ext="PDF"><span class="file-type">MATH · 2017</span><h4>2017 入学考试数学题</h4><p>选择、填空与综合解答题。</p><a href="xjtu-2017-math-exam.pdf" rel="noopener" target="_blank">预览 / 下载 ↗</a></article>
