@@ -1,6 +1,6 @@
 {
-  "version": "V5.0.0",
-  "generated": "2026-07-23",
+  "version": "V7.0.0",
+  "generated": "2026-07-24",
   "files": [
     {
       "path": ".nojekyll",
@@ -14,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1156,
-      "sha256": "3cbffc16b8a2ed50ab2283c30b923552d4f908bf1a7838048617ea49a27faedb"
+      "bytes": 1350,
+      "sha256": "27af19a0e66208f1551239f7ff4d601b2206ec519423b7492ac6938e1cacb672"
     },
     {
       "path": "VERSION.txt",
       "bytes": 18,
-      "sha256": "09f825902f3f54128d8286bcbf183e9ccb1f878dcf87a2df9d83b55cb749f928"
+      "sha256": "35fd09fddc1181e0daeed2948205c0cbb8495b63c34b45f1e13ce5c7d3c7172e"
     },
     {
       "path": "apple-touch-icon.png",
@@ -44,8 +44,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 77929,
-      "sha256": "f5308ffd131fe82878b2f15077c685b05006522e2216fd8776fdc41722a45e01"
+      "bytes": 85639,
+      "sha256": "ae60c32ea1fd39f4e83664ff10fb1a12fa5a72a36736f7ea36d5a72c44f9fd2c"
     },
     {
       "path": "robots.txt",
