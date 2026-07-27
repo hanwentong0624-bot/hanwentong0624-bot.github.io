@@ -1,16 +1,6 @@
 {
-  "version": "V8.0.0",
+  "version": "V9.1.0",
   "generated": "2026-07-27",
-  "new_files_added": [
-    "xjtu-2019-honors-selection-guide.png",
-    "xjtu-ai-interview-experience.png",
-    "xjtu-qian-class-qa.pdf",
-    "xjtu-entry-exam-english-placement-notes.docx"
-  ],
-  "semantic_duplicates_excluded": [
-    "XJTU入学数学测试(2).pdf（内容与2016/2017/2019单卷重叠）",
-    "重复的2016/2017/2020数学、2022数物、英语样题、参考答案副本"
-  ],
   "files": [
     {
       "path": ".nojekyll",
@@ -24,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 509,
-      "sha256": "fca892540abda8b913ebffaa416620f83348f59d1d586fd54f832f812aa4ed32"
+      "bytes": 687,
+      "sha256": "04082eff0030098d3b96ed5414e61c217d70b71d5b00f859cf25fdbbf7804fd8"
     },
     {
       "path": "VERSION.txt",
       "bytes": 18,
-      "sha256": "06e893f34694e89df23acaf635fb46102502d9121c34c28deba84d1c8d7fe631"
+      "sha256": "b7c20b40dee3a5ee32c22cba6f56586b9939726061387b98be907d83b318de99"
     },
     {
       "path": "apple-touch-icon.png",
@@ -54,8 +44,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 95469,
-      "sha256": "594c4710de25c4bd9bd8bcdf3216abcd8db81951927d84e918f926668259f939"
+      "bytes": 117135,
+      "sha256": "3faa3d1f50e3e031914c5e42391d04562e00175736c99b8315fb806c14b95405"
     },
     {
       "path": "robots.txt",
@@ -69,8 +59,13 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 256,
-      "sha256": "281e612ea6e1e4f6f281dda6c88027fdc9003fa161bc98b9ba6c4f70cc91a7b1"
+      "bytes": 254,
+      "sha256": "d0ab8eb2d1fca755394a610c7ee82f47310d034a4dd6bbd3590fa235d105c109"
+    },
+    {
+      "path": "version-history.html",
+      "bytes": 9592,
+      "sha256": "4423ab08f572003becf10d76be72bca58dcc5729707f8920207b9892dbc1fd75"
     },
     {
       "path": "xjtu-2016-math-exam.pdf",
