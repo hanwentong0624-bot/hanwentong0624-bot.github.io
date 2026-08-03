@@ -1,6 +1,6 @@
 {
-  "version": "V9.1.0",
-  "generated": "2026-07-27",
+  "version": "V10.0.0",
+  "updated": "2026-08-03",
   "files": [
     {
       "path": ".nojekyll",
@@ -14,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 687,
-      "sha256": "04082eff0030098d3b96ed5414e61c217d70b71d5b00f859cf25fdbbf7804fd8"
+      "bytes": 565,
+      "sha256": "10af1f02147b678c4effd118120a45b157f4b115ed5b133e6262d728475eb697"
     },
     {
       "path": "VERSION.txt",
-      "bytes": 18,
-      "sha256": "b7c20b40dee3a5ee32c22cba6f56586b9939726061387b98be907d83b318de99"
+      "bytes": 19,
+      "sha256": "1942d7e9f4541afdec37a25303cc64aedf47896eb3ffc99237ec6a38b834ac45"
     },
     {
       "path": "apple-touch-icon.png",
@@ -44,8 +44,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 117135,
-      "sha256": "3faa3d1f50e3e031914c5e42391d04562e00175736c99b8315fb806c14b95405"
+      "bytes": 109138,
+      "sha256": "9569cc20b82e0bc784f69680100f3187d39eaeb1fd8940a7e85938c152e9bb9c"
     },
     {
       "path": "robots.txt",
@@ -59,13 +59,13 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 254,
-      "sha256": "d0ab8eb2d1fca755394a610c7ee82f47310d034a4dd6bbd3590fa235d105c109"
+      "bytes": 423,
+      "sha256": "c5e55fdd5e047f970e180f01e2db12fedf00796e6dd40aa834017d7b215cb699"
     },
     {
       "path": "version-history.html",
-      "bytes": 9592,
-      "sha256": "4423ab08f572003becf10d76be72bca58dcc5729707f8920207b9892dbc1fd75"
+      "bytes": 8622,
+      "sha256": "95500b3aabb87ffa54e3b6d0bcf066973699bc49fa5134585b40f7784b9dafe8"
     },
     {
       "path": "xjtu-2016-math-exam.pdf",
@@ -188,19 +188,14 @@
       "sha256": "db47453b2a5b3feb73e62dc7c04f933a6703ae2adf5c4b3ba531f61dcace582a"
     },
     {
-      "path": "xjtu-qian-class-qa.pdf",
-      "bytes": 314478,
-      "sha256": "178f8f88140a5e4e41ec04d7d1730e91bc19e6d6a57d30ac5cbcc5c1614f2f12"
-    },
-    {
       "path": "xjtu-recent-math-reference-answers.pdf",
       "bytes": 831403,
       "sha256": "b3902908cb580d6c0ff249e187a952ad532cb9c92740744aca65911a716ea7d1"
     },
     {
       "path": "xjtu-selection-materials-complete-2026.zip",
-      "bytes": 14821029,
-      "sha256": "5db48b571fa0db3bc6dad9eca32a439ebd71ff157600f004db1c0f4062fbab02"
+      "bytes": 14520583,
+      "sha256": "2374b1362f08a2270af327a0a7c2b84e76ba7bab795c7feaf51157d4d7c2e526"
     },
     {
       "path": "xjtu-selection-past-papers-lite.zip",
