@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="童瀚文，西安交通大学钱学森班自动化本科生。关注视觉自回归、可控生成和免训练图像编辑。查看我的公开课程与项目。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="童瀚文 | 个人主页">
+  <meta property="og:description" content="西安交通大学 · 自动化。视觉自回归、免训练图像编辑、公开课程与项目。">
+  <meta property="og:url" content="https://hanwentong0624-bot.github.io/about/">
+  <link rel="canonical" href="https://hanwentong0624-bot.github.io/about/">
+  <title>童瀚文 | 个人主页</title>
+  <script>
+    try {
+      const theme = localStorage.getItem("hanwen-theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch {}
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8faf8;
+      --surface: #fff;
+      --ink: #172f32;
+      --muted: #4f6667;
+      --line: #dbe5e2;
+      --accent: #086b61;
+      --accent-soft: #e9f3ef;
+      --grid: #c8e1d7;
+      --art: #edf5f0;
+      --art-panel: #f8fcf9;
+      --point: #358b79;
+      --serif: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        color-scheme: dark;
+        --paper: #12201f;
+        --surface: #172826;
+        --ink: #e1eeea;
+        --muted: #a6c0bc;
+        --line: #2f4944;
+        --accent: #90ddc5;
+        --accent-soft: #1a3630;
+        --grid: #315b51;
+        --art: #192e2a;
+        --art-panel: #213b34;
+        --point: #7bcbb5;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --paper: #12201f;
+      --surface: #172826;
+      --ink: #e1eeea;
+      --muted: #a6c0bc;
+      --line: #2f4944;
+      --accent: #90ddc5;
+      --accent-soft: #1a3630;
+      --grid: #315b51;
+      --art: #192e2a;
+      --art-panel: #213b34;
+      --point: #7bcbb5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 26px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.8 var(--sans); }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+    button { font: inherit; }
+    [hidden] { display: none !important; }
+    .shell { width: min(1060px, calc(100% - 72px)); margin-inline: auto; }
+    .skip { position: absolute; z-index: 5; inset: 12px auto auto 12px; padding: 8px 14px; background: var(--surface); translate: 0 -150%; }
+    .skip:focus { translate: 0; }
+    .masthead { border-bottom: 1px solid var(--line); }
+    .masthead .shell { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: inline-flex; gap: 11px; align-items: center; color: var(--ink); font-weight: 750; text-decoration: none; white-space: nowrap; }
+    .monogram { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font: 700 11px var(--mono); }
+    .nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 34px); }
+    .nav a { color: var(--muted); font-size: 14px; text-decoration: none; white-space: nowrap; }
+    .nav a:hover, .nav a:focus-visible { color: var(--accent); text-decoration: underline; }
+    .theme { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--ink); font-size: 18px; line-height: 1; cursor: pointer; }
+    .theme:hover { background: var(--accent-soft); }
+
+    .hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: clamp(32px, 6vw, 88px); padding: 72px 0 57px; border-bottom: 1px solid var(--line); }
+    .affiliation { margin: 0 0 13px; color: var(--accent); font-size: 13px; letter-spacing: .055em; font-weight: 650; }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1 { font: 700 clamp(62px, 8vw, 100px)/1.08 var(--serif); letter-spacing: -.045em; }
+    .roman-name { margin: 9px 0 22px; color: var(--muted); font: 400 clamp(22px, 3vw, 30px)/1.2 Georgia, serif; letter-spacing: .012em; }
+    .hero-copy { max-width: 33em; color: var(--ink); }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .button-link { display: inline-flex; align-items: center; gap: 9px; padding: 7px 13px; color: var(--accent); background: var(--surface); border: 1px solid var(--line); border-radius: 7px; font-size: 13px; font-weight: 650; text-decoration: none; }
+    .button-link:hover { background: var(--accent-soft); border-color: var(--accent); }
+    .button-link b { font-size: 12px; font-weight: 500; }
+    .figure { margin: 0; min-width: 0; }
+    .scale-art {
+      position: relative;
+      aspect-ratio: 1.48;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: radial-gradient(circle at 1px 1px, var(--grid) 1px, transparent 1.2px) 0 0 / 16px 16px, var(--art);
+    }
+    .layer {
+      position: absolute;
+      width: 39%;
+      aspect-ratio: 1;
+      border: 1px solid var(--point);
+      border-radius: 3px;
+      color: var(--accent);
+      background: var(--art-panel);
+      box-shadow: 0 7px 23px #152e321c;
+    }
+    .layer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(90deg, transparent calc(100% - 1px), var(--grid) 0), linear-gradient(0deg, var(--grid) 1px, transparent 0);
+      background-size: var(--cell) var(--cell);
+    }
+    .layer::after {
+      content: "";
+      position: absolute;
+      left: var(--mark-x);
+      top: var(--mark-y);
+      width: var(--mark);
+      height: var(--mark);
+      background: var(--point);
+      opacity: .62;
+    }
+    .layer span { position: absolute; z-index: 1; inset: auto auto 5px 6px; padding: 1px 4px; background: var(--art-panel); font: 600 clamp(9px, 1vw, 11px)/1.4 var(--mono); }
+    .layer-coarse { --cell: 25%; --mark: 25%; --mark-x: 25%; --mark-y: 25%; left: 9%; top: 10%; }
+    .layer-middle { --cell: 12.5%; --mark: 25%; --mark-x: 37.5%; --mark-y: 25%; left: 29%; top: 24%; }
+    .layer-fine { --cell: 6.25%; --mark: 18.75%; --mark-x: 43.75%; --mark-y: 31.25%; left: 51%; top: 35%; }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: 8px; color: var(--muted); font-size: 12px; }
+    figcaption span:last-child { font-family: var(--mono); }
+
+    .page-grid { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: clamp(42px, 7vw, 98px); padding: 45px 0 62px; }
+    section + section { margin-top: 43px; }
+    .section-title { display: flex; gap: 13px; align-items: baseline; margin-bottom: 14px; }
+    .section-title h2 { color: var(--ink); font: 700 30px/1.27 var(--serif); }
+    .section-title span { font: 500 11px/1.2 var(--mono); color: var(--accent); }
+    .intro { color: var(--muted); }
+    .topics { margin: 17px 0 0; }
+    .topics div { display: grid; grid-template-columns: minmax(120px, .34fr) minmax(0, 1fr); gap: 16px; padding: 11px 0; border-top: 1px solid var(--line); }
+    .topics div:last-child { border-bottom: 1px solid var(--line); }
+    .topics dt { font-weight: 700; font-size: 14px; }
+    .topics dd { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .entry { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 13px; padding: 17px 0; border-top: 1px solid var(--line); }
+    .entry:last-child { border-bottom: 1px solid var(--line); }
+    .entry-mark { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 8px; background: var(--accent-soft); color: var(--accent); font: 700 13px var(--mono); }
+    .entry-mark.physics { font: 700 22px Georgia, serif; }
+    .entry h3 { font-size: 17px; line-height: 1.5; }
+    .entry p { margin-top: 4px; color: var(--muted); font-size: 14px; }
+    .entry-links { display: flex; flex-wrap: wrap; gap: 4px 17px; margin-top: 6px; font-size: 13px; font-weight: 650; }
+    .entry-links a { text-decoration-color: var(--grid); }
+    .entry-links a:hover { text-decoration-color: currentColor; }
+
+    .rail { position: sticky; top: 26px; align-self: start; padding: 4px 0 4px 18px; border-left: 1px solid var(--line); }
+    .rail h2 { margin-bottom: 7px; color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .08em; }
+    .rail ul { list-style: none; margin: 0; padding: 0; }
+    .rail a { display: inline-block; padding: 4px 0; color: var(--muted); font-size: 14px; text-decoration: none; }
+    .rail a:hover { text-decoration: underline; color: var(--accent); }
+    .rail a[aria-current="location"] { color: var(--accent); font-weight: 700; }
+    footer { border-top: 1px solid var(--line); }
+    footer .shell { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 21px 0 25px; color: var(--muted); font-size: 13px; }
+    footer a { font-weight: 600; }
+
+    @media (max-width: 820px) {
+      .page-grid { grid-template-columns: minmax(0, 1fr) 128px; gap: 34px; }
+      .hero { gap: 28px; padding-top: 55px; }
+    }
+
+    @media (max-width: 670px) {
+      .shell { width: calc(100% - 36px); }
+      .masthead .shell { min-height: 64px; gap: 12px; }
+      .nav { gap: 12px; }
+      .nav a { font-size: 13px; }
+      .theme { width: 32px; height: 32px; }
+      .monogram { display: none; }
+      .hero { grid-template-columns: minmax(0, 1fr); gap: 27px; padding: 41px 0 33px; }
+      .figure { width: min(100%, 440px); }
+      .page-grid { display: block; padding: 32px 0 44px; }
+      .rail { display: none; }
+      section + section { margin-top: 34px; }
+    }
+
+    @media (max-width: 365px) {
+      .masthead .shell { flex-wrap: wrap; padding-block: 9px; }
+      .topics div { grid-template-columns: auto; gap: 2px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="masthead">
+    <div class="shell">
+      <a class="brand" href="#top"><span class="monogram" aria-hidden="true">HT</span>童瀚文</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#research">研究</a>
+        <a href="#teaching">课程</a>
+        <a href="#projects">项目</a>
+        <button class="theme" type="button" aria-label="切换配色" hidden><span aria-hidden="true">◐</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="main">
+    <div class="hero" id="about">
+      <div>
+        <p class="affiliation">西安交通大学 · 钱学森班 · 自动化</p>
+        <h1>童瀚文</h1>
+        <p class="roman-name" lang="en">Hanwen Tong</p>
+        <p class="hero-copy">我是西安交通大学钱学森学院钱学森班的本科生，专业是自动化。我目前关注视觉自回归模型，尤其是如何在生成过程中控制局部内容，以及如何利用已有计算来加快图像编辑。</p>
+        <div class="hero-links">
+          <a class="button-link" href="https://github.com/hanwentong0624-bot">GitHub <b aria-hidden="true">↗</b></a>
+          <a class="button-link" href="https://space.bilibili.com/473329034">B 站 · 萌新小童呀 <b aria-hidden="true">↗</b></a>
+        </div>
+      </div>
+      <figure class="figure">
+        <div class="scale-art" aria-hidden="true">
+          <div class="layer layer-coarse"><span>4 × 4</span></div>
+          <div class="layer layer-middle"><span>8 × 8</span></div>
+          <div class="layer layer-fine"><span>16 × 16</span></div>
+        </div>
+        <figcaption><span>视觉 token 网格示意</span><span>COARSE → FINE</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="page-grid">
+      <div>
+        <section id="research" aria-labelledby="research-title">
+          <div class="section-title"><h2 id="research-title">研究兴趣</h2><span lang="en">Research</span></div>
+          <p class="intro">我感兴趣的一个问题是，怎样在不额外训练模型的情况下，只修改图像中指定的区域，同时保留其余内容，让修改结果在结构和语义上与原图协调。</p>
+          <dl class="topics">
+            <div>
+              <dt>视觉自回归</dt>
+              <dd>多尺度视觉 tokenization，以及从粗到细的图像生成。</dd>
+            </div>
+            <div>
+              <dt>可控生成与编辑</dt>
+              <dd>免训练图像编辑、掩码引导和局部 token 控制。</dd>
+            </div>
+            <div>
+              <dt>高效推理与视频</dt>
+              <dd>缓存与 token 复用，以及视频编辑中的时序一致性。</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="teaching" aria-labelledby="teaching-title">
+          <div class="section-title"><h2 id="teaching-title">公开课程</h2><span lang="en">Teaching</span></div>
+          <article class="entry">
+            <div class="entry-mark physics" aria-hidden="true">∫</div>
+            <div>
+              <h3>大学物理基础知识公益讲座</h3>
+              <p>面向准大学生和本科新生，讲解力学基础、微积分在物理中的用法，以及如何把实际问题写成可分析的模型。</p>
+              <div class="entry-links">
+                <a href="https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0%E5%B0%8F%E7%AB%A5%E5%91%80%20%E5%A4%A7%E7%89%A9">在 B 站查找讲座 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-title">
+          <div class="section-title"><h2 id="projects-title">公开项目</h2><span lang="en">Projects</span></div>
+          <article class="entry">
+            <div class="entry-mark" aria-hidden="true">交</div>
+            <div>
+              <h3>西安交通大学入校选拔指南</h3>
+              <p>为西交新生整理的入校选拔导航，集中提供各类试验班介绍、官方通知、报名流程、历年资料与先修课程入口。</p>
+              <div class="entry-links">
+                <a href="https://hanwentong0624-bot.github.io/">访问指南 <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/hanwentong0624-bot/hanwentong0624-bot.github.io">指南源码 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-mark" aria-hidden="true">He</div>
+            <div>
+              <h3>VoiceGasSimulator · 氦气变声模拟</h3>
+              <p>用于声学课堂演示的 Python 桌面程序。利用 WORLD 声码器调整语音的频谱包络，模拟氦气等气体对听感的影响，并对照显示波形和声谱图。</p>
+              <div class="entry-links">
+                <a href="https://github.com/hanwentong0624-bot/VoiceGasSimulator">查看项目源码 <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <aside class="rail">
+        <nav aria-label="页内目录">
+          <h2>本页目录</h2>
+          <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#research">研究兴趣</a></li>
+            <li><a href="#teaching">公开课程</a></li>
+            <li><a href="#projects">公开项目</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell"><span>© 2026 童瀚文</span><a href="#top">返回顶部 <span aria-hidden="true">↑</span></a></div>
+  </footer>
+
+  <script>
+    const themeButton = document.querySelector(".theme");
+    const systemTheme = matchMedia("(prefers-color-scheme: dark)");
+    const currentTheme = () => document.documentElement.dataset.theme
+      || (systemTheme.matches ? "dark" : "light");
+
+    function updateThemeButton() {
+      const dark = currentTheme() === "dark";
+      themeButton.setAttribute("aria-label", dark ? "切换到浅色模式" : "切换到深色模式");
+      themeButton.title = themeButton.getAttribute("aria-label");
+      themeButton.firstElementChild.textContent = dark ? "☀" : "☾";
+    }
+
+    themeButton.addEventListener("click", () => {
+      const theme = currentTheme() === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = theme;
+      try { localStorage.setItem("hanwen-theme", theme); } catch {}
+      updateThemeButton();
+    });
+    systemTheme.addEventListener("change", updateThemeButton);
+    updateThemeButton();
+    themeButton.hidden = false;
+
+    const contentsLinks = Array.from(document.querySelectorAll(".rail a"));
+    const contentsSections = contentsLinks.map(link => document.querySelector(link.hash));
+
+    function markCurrentSection() {
+      const active = contentsSections.findLastIndex(section => section.getBoundingClientRect().top <= 110);
+      const atEnd = window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+      const index = atEnd ? contentsLinks.length - 1 : Math.max(active, 0);
+      contentsLinks.forEach((link, position) => {
+        if (position === index) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    }
+
+    window.addEventListener("scroll", markCurrentSection, { passive: true });
+    window.addEventListener("resize", markCurrentSection);
+    markCurrentSection();
+  </script>
+</body>
+</html>
